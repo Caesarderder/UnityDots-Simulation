@@ -1,0 +1,45 @@
+{
+  "name": "com.projectdawn.navigation",
+  "displayName": "Agents Navigation",
+  "version": "3.5.0",
+  "unity": "2022.3",
+  "keywords": [
+    "ai",
+    "avoidance",
+    "agent",
+    "path",
+    "navigation"
+  ],
+  "dependencies": {
+    "com.unity.ai.navigation": "1.1.4",
+    "com.unity.entities": "1.0.14",
+    "com.unity.modules.ui": "1.0.0"
+  },
+  "samples": [
+    {
+      "displayName": "Scenarios",
+      "description": "Contains small isolated test scenes that showcases some common navigation behaviors (etc. circle, hallway, group ...).",
+      "path": "Samples~/Scenarios"
+    },
+    {
+      "displayName": "Zerg",
+      "description": "Small subset of RTS game. With some common controls like smart stop, attack, follow, combat...",
+      "path": "Samples~/Zerg"
+    },
+    {
+      "displayName": "Mass",
+      "description": "Stress test scene where thousands of agents are spawned and navigate through static and dynamic obstacles.",
+      "path": "Samples~/Mass"
+    }
+  ],
+  "description": "High performance, modular and scalable navigation for agents.",
+  "type": "tool",
+  "unityRelease": "4f1",
+  "author": {
+    "name": "Lukas Chodosevicius",
+    "email": "lukaschodosevicius@gmail.com",
+    "url": "https://assetstore.unity.com/publishers/62140"
+  },
+  "documentationUrl": "https://lukaschod.github.io/agents-navigation-docs/manual/index.html",
+  "changelogUrl": "https://lukaschod.github.io/agents-navigation-docs/changelog.html"
+}

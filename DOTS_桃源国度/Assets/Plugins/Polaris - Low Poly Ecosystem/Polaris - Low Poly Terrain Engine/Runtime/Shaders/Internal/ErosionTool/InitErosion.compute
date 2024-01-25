@@ -1,0 +1,20 @@
+﻿#pragma kernel Init
+
+#include "ErosionToolCommon.cginc"
+
+Texture2D<float4> _HeightMap;
+int _HeightMapResolution;
+float3 _TerrainSize;
+
+RWTexture2D<float4> _SimulationData; //r: current height, g: suspended sediment, b: last height, a: water level
+
+[numthreads(8, 1, 8)]
+void Init(uint3 id: SV_DISPATCHTHREADID)
+{
+	float2 uv = id.xz / _TerrainSize.xz;
+	float2 encHeight = SampleTextureBilinear(_HeightMap, _HeightMapResolution, _HeightMapResolution, uv).rg;
+	float h = DecodeFloatRG(encHeight) * _TerrainSize.y;
+
+	float4 data = float4(h, 0, h, 0);
+	_SimulationData[id.xz] = data;
+}

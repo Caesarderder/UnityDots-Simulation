@@ -1,0 +1,34 @@
+{
+    "name": "Rukhanka.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:01e5f7c036964124aa192bf5e2d021ba",
+        "GUID:734d92eba21c94caba915361bd5ac177",
+        "GUID:2665a8d13d1b3f18800f46e256720795",
+        "GUID:d8b63aba1907145bea998dd612889d6b",
+        "GUID:442911fa060b2d148b430623121a113c",
+        "GUID:e0cd26848372d4e5c891c569017e11f1",
+        "GUID:a5baed0c9693541a5bd947d336ec7659",
+        "GUID:953adc2a6b8b4e3c8df5b728bcd546e9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.render-pipelines.universal",
+            "expression": "9.9.9",
+            "define": "URP_10_0_0_OR_NEWER"
+        },
+        {
+            "name": "com.unity.render-pipelines.high-definition",
+            "expression": "9.9.9",
+            "define": "HDRP_10_0_0_OR_NEWER"
+        }
+    ],
+    "noEngineReferences": false
+}

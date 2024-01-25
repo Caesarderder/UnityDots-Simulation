@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f45ad0538dc0d44b0b071a0f813b34, type: 3}
+  m_Name: PolarisEditorSettings
+  m_EditorClassIdentifier: 
+  general:
+    enableAnalytics: 1
+    enableAffiliateLinks: 1
+    debugMode: 0
+    showGeometryChunkInHierarchy: 1
+  livePreview:
+    triangleMeshes:
+    - {fileID: 4300000, guid: b0c1d9f1f71dac242bf1e740df1d5daf, type: 3}
+    - {fileID: 4300000, guid: 4696ad07c62c7214db2580f0ec1b95b5, type: 3}
+    - {fileID: 4300000, guid: 31a151ed30b773c4291a88736a04b3a2, type: 3}
+    - {fileID: 4300000, guid: d3b8adb1a8ed2f9419de072e5beb84f9, type: 3}
+    - {fileID: 4300000, guid: 2be8ef80a0f55b049b3fdb04a887bc88, type: 3}
+    - {fileID: 4300000, guid: e9215a6e4d62f274d808f3bc09907a77, type: 3}
+    - {fileID: 4300000, guid: b1a74c377a6c24641904108eafa2858d, type: 3}
+    - {fileID: 4300000, guid: 3f5249ac2d9bdcb429e6dd1b53bc14be, type: 3}
+    - {fileID: 4300000, guid: 9081e385818e5a34fa640710053249b6, type: 3}
+    - {fileID: 4300000, guid: 6f7abdaf5814a8d418b35f1669addf61, type: 3}
+    - {fileID: 4300000, guid: b5661883f1e046c448831153b67fcd45, type: 3}
+    - {fileID: 4300000, guid: ce3db579ad4acf1439cffc5585e7b514, type: 3}
+    - {fileID: 4300000, guid: 7807d55b162ded547a688d7312ece635, type: 3}
+    - {fileID: 4300000, guid: 4fa4f3a0c335316429a5e3cad20987b3, type: 3}
+    wireframeMeshes:
+    - {fileID: -7545648769482682034, guid: 8d1a6310726c8af46a654a63d731e1d9, type: 2}
+    - {fileID: 7824496045614761139, guid: 8d1a6310726c8af46a654a63d731e1d9, type: 2}
+    - {fileID: 4415816138759136507, guid: 8d1a6310726c8af46a654a63d731e1d9, type: 2}
+    - {fileID: -4364259316440754202, guid: 8d1a6310726c8af46a654a63d731e1d9, type: 2}
+    - {fileID: 6077507419332752527, guid: 8d1a6310726c8af46a654a63d731e1d9, type: 2}
+    - {fileID: -4116841215985328909, guid: 8d1a6310726c8af46a654a63d731e1d9, type: 2}
+    - {fileID: 2788245635280905043, guid: 8d1a6310726c8af46a654a63d731e1d9, type: 2}
+    - {fileID: -4749800839919834088, guid: 8d1a6310726c8af46a654a63d731e1d9, type: 2}
+    - {fileID: -789986510596783984, guid: 8d1a6310726c8af46a654a63d731e1d9, type: 2}
+    - {fileID: 1871503086479567833, guid: 8d1a6310726c8af46a654a63d731e1d9, type: 2}
+    - {fileID: -6900690165918378340, guid: 8d1a6310726c8af46a654a63d731e1d9, type: 2}
+    - {fileID: 4322945996124586463, guid: 8d1a6310726c8af46a654a63d731e1d9, type: 2}
+    - {fileID: -3334679760937552935, guid: 8d1a6310726c8af46a654a63d731e1d9, type: 2}
+    - {fileID: 4496486162871604440, guid: 8d1a6310726c8af46a654a63d731e1d9, type: 2}
+  paintTools:
+    enableHistory: 1
+    enableLivePreview: 1
+    useSimpleCursor: 0
+    normalActionCursorColor: {r: 0.5019608, g: 0.5019608, b: 1, a: 0.7490196}
+    negativeActionCursorColor: {r: 1, g: 0.5019608, b: 0.5019608, a: 0.7490196}
+    alternativeActionCursorColor: {r: 1, g: 1, b: 0.5019608, a: 0.7490196}
+    radiusStep: 1
+    rotationStep: 3.6
+    opacityStep: 0.025
+    densityStep: 1
+    useMultiSplatsSelector: 0
+    showTerrainMask: 1
+  splineTools:
+    anchorColor: {r: 1, g: 0, b: 0, a: 1}
+    segmentColor: {r: 1, g: 0, b: 0, a: 1}
+    meshColor: {r: 0, g: 1, b: 1, a: 1}
+    selectedElementColor: {r: 1, g: 1, b: 0, a: 1}
+    positiveHighlightColor: {r: 0.5019608, g: 0.5019608, b: 1, a: 1}
+    negativeHighlightColor: {r: 1, g: 0, b: 0, a: 1}
+    autoTangent: 1
+    raycastLayers:
+      serializedVersion: 2
+      m_Bits: 55
+    showTransformGizmos: 0
+    livePreview:
+      rampMaker: 1
+      pathPainter: 1
+      foliageSpawner: 1
+      foliageRemover: 1
+      objectSpawner: 0
+      objectRemover: 1
+  billboardTools:
+    atlasMaterial: {fileID: 2100000, guid: 81ff27138fbe35e43b791b7088cbfa98, type: 2}
+    normalMaterial: {fileID: 2100000, guid: 9a11355ff1f8b8d4a86ba7f482824cf8, type: 2}
+  stampTools:
+    visualizeColor: {r: 0.5019608, g: 0.5019608, b: 1, a: 0.7490196}
+    minRotation: 0
+    maxRotation: 360
+    minScale: {x: 0.8, y: 0.8, z: 0.8}
+    maxScale: {x: 1.2, y: 1.5, z: 1.2}
+    showLivePreview: 1
+    showBounds: 1
+    showTerrainMask: 0
+  wizardTools:
+    lightingModel: 0
+    texturingModel: 0
+    splatsModel: 1
+    origin: {x: 0, y: 0, z: 0}
+    tileSize: {x: 500, y: 500, z: 500}
+    tileCountX: 1
+    tileCountZ: 1
+    groupId: 0
+    terrainNamePrefix: Terrain
+    dataDirectory: Assets/Art
+    setShaderGroupId: -1
+  renderPipelines:
+    universalRenderPipelinePackage: {fileID: 102900000, guid: 8bc88477f037e96478019bba8de301fd,
+      type: 3}
+  topographic:
+    enable: 0
+    topographicMaterial: {fileID: 2100000, guid: f1271be60ed7edf4f86c5d532eeb2bf3,
+      type: 2}
+  erosionTools:
+    livePreviewMode: 0
+    dataView: 2
+    dataViewScale: 0.88
+    dataViewChannel: 1
+    showTerrainMask: 0
+  layers:
+    raycastLayerIndex: 30
+    splineLayerIndex: 31
+  demoAssets:
+    demoMaterials:
+    - {fileID: 2100000, guid: 735795f0372b8ed49aea89baa817642d, type: 2}
+    - {fileID: 2100000, guid: 6f0e4c3dd6e1bbc45aec4d7514a897d0, type: 2}
+    - {fileID: 2100000, guid: f2dbbe3190b796d40a0de9fb6b7473b9, type: 2}
+    - {fileID: 2100000, guid: a324a9e7defbd0c44b27d4bb0a07de9d, type: 2}
+    - {fileID: 2100000, guid: 58b50d1c1e3226346af664b510a6317a, type: 2}
+    - {fileID: 2100000, guid: 08bc31ddd4e8b0e4fad8f22e1f97c611, type: 2}
+    - {fileID: 2100000, guid: f060003264469674aad81ac4c67a59e9, type: 2}
+    - {fileID: 2100000, guid: 918c39926d6ac6b459c226df83376a98, type: 2}
+    - {fileID: 2100000, guid: 734ed51a95631de45bcbdbb13da48839, type: 2}
+    - {fileID: 2100000, guid: dccd4f45664843347b6140f5ade5d559, type: 2}
+    - {fileID: 2100000, guid: 7136b5e7cb6d2da4285f19308a5d484b, type: 2}
+    - {fileID: 2100000, guid: 1d5951a2a69fd634bab222c0c5ac3eaa, type: 2}
+    - {fileID: 2100000, guid: f303d8cae092c5b4498c70815c61cf7e, type: 2}
+    - {fileID: 2100000, guid: 4da735dab769da044b577f44995d83a6, type: 2}
+    - {fileID: 2100000, guid: 40be8d162497a4a4ca220bbaf3d032bc, type: 2}
+    - {fileID: 2100000, guid: 76a744d72fa84474397198c81fa41777, type: 2}
+    - {fileID: 2100000, guid: f4003bec18117a34b85209e63e111c03, type: 2}
+    - {fileID: 2100000, guid: ce4677e7d6bc9264a8ba53c46f51ade6, type: 2}

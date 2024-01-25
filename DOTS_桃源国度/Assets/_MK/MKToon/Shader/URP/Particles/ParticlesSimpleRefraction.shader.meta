@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 12e62ddce1b0f2e4fa70f90035111795
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _AlbedoMap: {instanceID: 0}
+  - _SpecularMap: {instanceID: 0}
+  - _NormalMap: {instanceID: 0}
+  - _EmissionMap: {instanceID: 0}
+  - _DiffuseRamp: {instanceID: 0}
+  - _SpecularRamp: {instanceID: 0}
+  - _RimRamp: {instanceID: 0}
+  - _ThresholdMap: {instanceID: 0}
+  - _GoochRamp: {instanceID: 0}
+  - _IridescenceRamp: {instanceID: 0}
+  - _VertexAnimationMap: {instanceID: 0}
+  - _NoiseMap: {fileID: 2800000, guid: b376780a16f30e141824d5baae6b8f5e, type: 3}
+  - _DissolveMap: {instanceID: 0}
+  - _DissolveBorderRamp: {instanceID: 0}
+  - _DrawnMap: {instanceID: 0}
+  - _HatchingBrightMap: {instanceID: 0}
+  - _HatchingDarkMap: {instanceID: 0}
+  - _SketchMap: {instanceID: 0}
+  - _RefractionDistortionMap: {instanceID: 0}
+  - _MainTex: {instanceID: 0}
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74547fd1526184b4088998c69e46ffea, type: 3}
+  m_Name: PolarisSkin
+  m_EditorClassIdentifier: 
+  textures:
+  - {fileID: 2800000, guid: 088457680be0e8b41813ba352a4b19ea, type: 3}
+  - {fileID: 2800000, guid: d42681901f8662b41941c82d7dca0ec8, type: 3}
+  - {fileID: 2800000, guid: 40b931fcb4fd4d04ab710f1a850cbd73, type: 3}
+  - {fileID: 2800000, guid: c58ad81d72b5c624aa0a7ba4b3e14373, type: 3}
+  - {fileID: 2800000, guid: 591d4c9fbe7b16849b8de6e3b3ecb268, type: 3}
+  - {fileID: 2800000, guid: ebd8a1d9d73590c46b57b034f64e792f, type: 3}
+  - {fileID: 2800000, guid: 81dffbdd326cbc04b883684c728e009d, type: 3}
+  - {fileID: 2800000, guid: 1230b7583cbf3544e920206f6dbc8169, type: 3}
+  - {fileID: 2800000, guid: d40864a6805879e4c9e45369718f6199, type: 3}
+  - {fileID: 2800000, guid: 951f32e54569bfc468e13dac18cb5f3d, type: 3}
+  - {fileID: 2800000, guid: 064a1781acf1dfd4893e2a3000801cfd, type: 3}
+  - {fileID: 2800000, guid: 8ddc15744c332cf4f9a0201a6ba2cdf3, type: 3}
+  - {fileID: 2800000, guid: 8ea68ca6867fe074ba0b5850780977f4, type: 3}
+  - {fileID: 2800000, guid: d6d3a527a9addcd459b2dfa2dfe60f7d, type: 3}
+  - {fileID: 2800000, guid: 5b890136503b1ea4c97a74c0c3879303, type: 3}
+  - {fileID: 2800000, guid: 6d2e238d0fddfb84c8c89137c629430d, type: 3}
+  - {fileID: 2800000, guid: 9b571de6a53b07e4dae2e7d5be148d75, type: 3}
+  - {fileID: 2800000, guid: 1ac3d37e93f95df438e9a7156efdc4f3, type: 3}
+  - {fileID: 2800000, guid: 76d4675bfad3d734d9932fa98d8f8010, type: 3}
+  - {fileID: 2800000, guid: a2bf6801097a522438eb03bf0cda68fc, type: 3}
+  - {fileID: 2800000, guid: cc953290d309828419b257b5e9ad3530, type: 3}
+  - {fileID: 2800000, guid: 6c006b88daf9b734fa2c402508cdcd91, type: 3}
+  - {fileID: 2800000, guid: 245d33fc09f637c498c0ad1596b73e54, type: 3}
+  - {fileID: 2800000, guid: eea2d53261a58f7408cadc9ba801e74f, type: 3}

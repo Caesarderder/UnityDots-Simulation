@@ -1,0 +1,711 @@
+fileFormatVersion: 2
+guid: 70d9dd1320913904aa353648dfde232b
+ModelImporter:
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Bush 1
+  - first:
+      1: 100002
+    second: Bush 2
+  - first:
+      1: 100004
+    second: Bush 3
+  - first:
+      1: 100006
+    second: Bush 4
+  - first:
+      1: 100008
+    second: Bush 6
+  - first:
+      1: 100010
+    second: Fir Tree 1
+  - first:
+      1: 100012
+    second: Fir Tree 5
+  - first:
+      1: 100014
+    second: Fir Tree 6
+  - first:
+      1: 100016
+    second: Flat Rock 1
+  - first:
+      1: 100018
+    second: Flat Rock 2
+  - first:
+      1: 100020
+    second: Flat Rock 4
+  - first:
+      1: 100022
+    second: Jungle Tree 10
+  - first:
+      1: 100024
+    second: Jungle Tree 11
+  - first:
+      1: 100026
+    second: Jungle Tree 3
+  - first:
+      1: 100028
+    second: Jungle Tree 4
+  - first:
+      1: 100030
+    second: Jungle Tree 5
+  - first:
+      1: 100032
+    second: Jungle Tree 6
+  - first:
+      1: 100034
+    second: Jungle Tree 8
+  - first:
+      1: 100036
+    second: Jungle Tree 9
+  - first:
+      1: 100038
+    second: Large Jungle Tree 2
+  - first:
+      1: 100040
+    second: Large Jungle Tree 3
+  - first:
+      1: 100042
+    second: Pebble 1
+  - first:
+      1: 100044
+    second: Pebble 2
+  - first:
+      1: 100046
+    second: Pebble 4
+  - first:
+      1: 100048
+    second: Pebble 5
+  - first:
+      1: 100050
+    second: Rock 1
+  - first:
+      1: 100052
+    second: Rock 2
+  - first:
+      1: 100054
+    second: Rock 3
+  - first:
+      1: 100056
+    second: Rock 4
+  - first:
+      1: 100058
+    second: Rock 6
+  - first:
+      1: 100060
+    second: //RootNode
+  - first:
+      1: 100062
+    second: Simple Rock 1
+  - first:
+      1: 100064
+    second: Simple Rock 2
+  - first:
+      1: 100066
+    second: Simple Rock 3
+  - first:
+      1: 100068
+    second: Stump 1
+  - first:
+      1: 100070
+    second: Stump 3
+  - first:
+      1: 100072
+    second: Stump 4
+  - first:
+      1: 100074
+    second: Stump 5
+  - first:
+      4: 400000
+    second: Bush 1
+  - first:
+      4: 400002
+    second: Bush 2
+  - first:
+      4: 400004
+    second: Bush 3
+  - first:
+      4: 400006
+    second: Bush 4
+  - first:
+      4: 400008
+    second: Bush 6
+  - first:
+      4: 400010
+    second: Fir Tree 1
+  - first:
+      4: 400012
+    second: Fir Tree 5
+  - first:
+      4: 400014
+    second: Fir Tree 6
+  - first:
+      4: 400016
+    second: Flat Rock 1
+  - first:
+      4: 400018
+    second: Flat Rock 2
+  - first:
+      4: 400020
+    second: Flat Rock 4
+  - first:
+      4: 400022
+    second: Jungle Tree 10
+  - first:
+      4: 400024
+    second: Jungle Tree 11
+  - first:
+      4: 400026
+    second: Jungle Tree 3
+  - first:
+      4: 400028
+    second: Jungle Tree 4
+  - first:
+      4: 400030
+    second: Jungle Tree 5
+  - first:
+      4: 400032
+    second: Jungle Tree 6
+  - first:
+      4: 400034
+    second: Jungle Tree 8
+  - first:
+      4: 400036
+    second: Jungle Tree 9
+  - first:
+      4: 400038
+    second: Large Jungle Tree 2
+  - first:
+      4: 400040
+    second: Large Jungle Tree 3
+  - first:
+      4: 400042
+    second: Pebble 1
+  - first:
+      4: 400044
+    second: Pebble 2
+  - first:
+      4: 400046
+    second: Pebble 4
+  - first:
+      4: 400048
+    second: Pebble 5
+  - first:
+      4: 400050
+    second: Rock 1
+  - first:
+      4: 400052
+    second: Rock 2
+  - first:
+      4: 400054
+    second: Rock 3
+  - first:
+      4: 400056
+    second: Rock 4
+  - first:
+      4: 400058
+    second: Rock 6
+  - first:
+      4: 400060
+    second: //RootNode
+  - first:
+      4: 400062
+    second: Simple Rock 1
+  - first:
+      4: 400064
+    second: Simple Rock 2
+  - first:
+      4: 400066
+    second: Simple Rock 3
+  - first:
+      4: 400068
+    second: Stump 1
+  - first:
+      4: 400070
+    second: Stump 3
+  - first:
+      4: 400072
+    second: Stump 4
+  - first:
+      4: 400074
+    second: Stump 5
+  - first:
+      21: 2100000
+    second: No Name
+  - first:
+      21: 2100002
+    second: Wood 2
+  - first:
+      21: 2100004
+    second: Wood 1
+  - first:
+      21: 2100006
+    second: Leaves
+  - first:
+      21: 2100008
+    second: Trunk
+  - first:
+      21: 2100010
+    second: Leaves 1
+  - first:
+      21: 2100012
+    second: Trunk 1
+  - first:
+      23: 2300000
+    second: Bush 1
+  - first:
+      23: 2300002
+    second: Bush 2
+  - first:
+      23: 2300004
+    second: Bush 3
+  - first:
+      23: 2300006
+    second: Bush 4
+  - first:
+      23: 2300008
+    second: Bush 6
+  - first:
+      23: 2300010
+    second: Fir Tree 1
+  - first:
+      23: 2300012
+    second: Fir Tree 5
+  - first:
+      23: 2300014
+    second: Fir Tree 6
+  - first:
+      23: 2300016
+    second: Flat Rock 1
+  - first:
+      23: 2300018
+    second: Flat Rock 2
+  - first:
+      23: 2300020
+    second: Flat Rock 4
+  - first:
+      23: 2300022
+    second: Jungle Tree 10
+  - first:
+      23: 2300024
+    second: Jungle Tree 11
+  - first:
+      23: 2300026
+    second: Jungle Tree 3
+  - first:
+      23: 2300028
+    second: Jungle Tree 4
+  - first:
+      23: 2300030
+    second: Jungle Tree 5
+  - first:
+      23: 2300032
+    second: Jungle Tree 6
+  - first:
+      23: 2300034
+    second: Jungle Tree 8
+  - first:
+      23: 2300036
+    second: Jungle Tree 9
+  - first:
+      23: 2300038
+    second: Large Jungle Tree 2
+  - first:
+      23: 2300040
+    second: Large Jungle Tree 3
+  - first:
+      23: 2300042
+    second: Pebble 1
+  - first:
+      23: 2300044
+    second: Pebble 2
+  - first:
+      23: 2300046
+    second: Pebble 4
+  - first:
+      23: 2300048
+    second: Pebble 5
+  - first:
+      23: 2300050
+    second: Rock 1
+  - first:
+      23: 2300052
+    second: Rock 2
+  - first:
+      23: 2300054
+    second: Rock 3
+  - first:
+      23: 2300056
+    second: Rock 4
+  - first:
+      23: 2300058
+    second: Rock 6
+  - first:
+      23: 2300060
+    second: Simple Rock 1
+  - first:
+      23: 2300062
+    second: Simple Rock 2
+  - first:
+      23: 2300064
+    second: Simple Rock 3
+  - first:
+      23: 2300066
+    second: Stump 1
+  - first:
+      23: 2300068
+    second: Stump 3
+  - first:
+      23: 2300070
+    second: Stump 4
+  - first:
+      23: 2300072
+    second: Stump 5
+  - first:
+      33: 3300000
+    second: Bush 1
+  - first:
+      33: 3300002
+    second: Bush 2
+  - first:
+      33: 3300004
+    second: Bush 3
+  - first:
+      33: 3300006
+    second: Bush 4
+  - first:
+      33: 3300008
+    second: Bush 6
+  - first:
+      33: 3300010
+    second: Fir Tree 1
+  - first:
+      33: 3300012
+    second: Fir Tree 5
+  - first:
+      33: 3300014
+    second: Fir Tree 6
+  - first:
+      33: 3300016
+    second: Flat Rock 1
+  - first:
+      33: 3300018
+    second: Flat Rock 2
+  - first:
+      33: 3300020
+    second: Flat Rock 4
+  - first:
+      33: 3300022
+    second: Jungle Tree 10
+  - first:
+      33: 3300024
+    second: Jungle Tree 11
+  - first:
+      33: 3300026
+    second: Jungle Tree 3
+  - first:
+      33: 3300028
+    second: Jungle Tree 4
+  - first:
+      33: 3300030
+    second: Jungle Tree 5
+  - first:
+      33: 3300032
+    second: Jungle Tree 6
+  - first:
+      33: 3300034
+    second: Jungle Tree 8
+  - first:
+      33: 3300036
+    second: Jungle Tree 9
+  - first:
+      33: 3300038
+    second: Large Jungle Tree 2
+  - first:
+      33: 3300040
+    second: Large Jungle Tree 3
+  - first:
+      33: 3300042
+    second: Pebble 1
+  - first:
+      33: 3300044
+    second: Pebble 2
+  - first:
+      33: 3300046
+    second: Pebble 4
+  - first:
+      33: 3300048
+    second: Pebble 5
+  - first:
+      33: 3300050
+    second: Rock 1
+  - first:
+      33: 3300052
+    second: Rock 2
+  - first:
+      33: 3300054
+    second: Rock 3
+  - first:
+      33: 3300056
+    second: Rock 4
+  - first:
+      33: 3300058
+    second: Rock 6
+  - first:
+      33: 3300060
+    second: Simple Rock 1
+  - first:
+      33: 3300062
+    second: Simple Rock 2
+  - first:
+      33: 3300064
+    second: Simple Rock 3
+  - first:
+      33: 3300066
+    second: Stump 1
+  - first:
+      33: 3300068
+    second: Stump 3
+  - first:
+      33: 3300070
+    second: Stump 4
+  - first:
+      33: 3300072
+    second: Stump 5
+  - first:
+      43: 4300000
+    second: Rock 2
+  - first:
+      43: 4300002
+    second: Rock 1
+  - first:
+      43: 4300004
+    second: Rock 3
+  - first:
+      43: 4300006
+    second: Rock 6
+  - first:
+      43: 4300008
+    second: Rock 4
+  - first:
+      43: 4300010
+    second: Simple Rock 1
+  - first:
+      43: 4300012
+    second: Simple Rock 3
+  - first:
+      43: 4300014
+    second: Simple Rock 2
+  - first:
+      43: 4300016
+    second: Flat Rock 1
+  - first:
+      43: 4300018
+    second: Flat Rock 2
+  - first:
+      43: 4300020
+    second: Flat Rock 4
+  - first:
+      43: 4300022
+    second: Pebble 1
+  - first:
+      43: 4300024
+    second: Pebble 2
+  - first:
+      43: 4300026
+    second: Pebble 5
+  - first:
+      43: 4300028
+    second: Pebble 4
+  - first:
+      43: 4300030
+    second: Stump 1
+  - first:
+      43: 4300032
+    second: Stump 3
+  - first:
+      43: 4300034
+    second: Stump 4
+  - first:
+      43: 4300036
+    second: Stump 5
+  - first:
+      43: 4300038
+    second: Fir Tree 1
+  - first:
+      43: 4300040
+    second: Fir Tree 5
+  - first:
+      43: 4300042
+    second: Fir Tree 6
+  - first:
+      43: 4300044
+    second: Jungle Tree 3
+  - first:
+      43: 4300046
+    second: Jungle Tree 6
+  - first:
+      43: 4300048
+    second: Jungle Tree 5
+  - first:
+      43: 4300050
+    second: Jungle Tree 4
+  - first:
+      43: 4300052
+    second: Jungle Tree 8
+  - first:
+      43: 4300054
+    second: Jungle Tree 10
+  - first:
+      43: 4300056
+    second: Jungle Tree 11
+  - first:
+      43: 4300058
+    second: Jungle Tree 9
+  - first:
+      43: 4300060
+    second: Large Jungle Tree 2
+  - first:
+      43: 4300062
+    second: Large Jungle Tree 3
+  - first:
+      43: 4300064
+    second: Bush 1
+  - first:
+      43: 4300066
+    second: Bush 2
+  - first:
+      43: 4300068
+    second: Bush 3
+  - first:
+      43: 4300070
+    second: Bush 4
+  - first:
+      43: 4300072
+    second: Bush 6
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leaves
+    second: {fileID: 2100000, guid: 1b246934e5ebf13429449fb98ef6319b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leaves 1
+    second: {fileID: 2100000, guid: 7cbc7316b4f5706498ce2ad82cfd44eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 675040b839763064a8c1b919730d4c41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trunk
+    second: {fileID: 2100000, guid: 1d5466269eff6a14596b18ca954d919f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trunk 1
+    second: {fileID: 2100000, guid: b71dd66be1fe5f44a9f2582d6f16b06e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood 1
+    second: {fileID: 2100000, guid: f29feec3fb113d04c8d984a3180852d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood 2
+    second: {fileID: 2100000, guid: d296561e7681f1344927697cfbae9580, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.15
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.15
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

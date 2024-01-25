@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 020e5f67a2e39c34cbb216db26697903, type: 3}
+  m_Name: Shapes Config
+  m_EditorClassIdentifier: 
+  useHdrColorPickers: 0
+  autoConfigureRenderPipeline: 1
+  useImmediateModeInstancing: 1
+  polylineDefaultPointsPerTurn: 64
+  polylineBezierAngularSumAccuracy: 2
+  pushPopStateInDrawCommands: 1
+  boundsSizeQuad: 65536
+  boundsSizeTriangle: 65536
+  boundsSizeSphere: 65536
+  boundsSizeTorus: 65536
+  boundsSizeCuboid: 65536
+  boundsSizeCone: 65536
+  boundsSizeCylinder: 65536
+  boundsSizeCapsule: 65536
+  sphereDetail: 020000000300000006000000080000000d000000
+  torusDivsMinorMajor:
+  - {x: 5, y: 8}
+  - {x: 12, y: 12}
+  - {x: 24, y: 32}
+  - {x: 32, y: 48}
+  - {x: 64, y: 128}
+  coneDivs: 080000000c000000200000004000000080000000
+  cylinderDivs: 080000000c000000200000004000000080000000
+  capsuleDivs: 0200000003000000080000000400000005000000
+  FRAG_OUTPUT_V4: 1
+  LOCAL_ANTI_ALIASING_QUALITY: 2
+  QUAD_INTERPOLATION_QUALITY: 1
+  NOOTS_ACROSS_SCREEN: 100

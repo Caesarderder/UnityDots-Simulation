@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111714d5b4aa2a74d9f18334a4e7b848, type: 3}
+  m_Name: SourceData
+  m_EditorClassIdentifier: 
+  _guid: bd24545c59fb3f24db886997ec562331
+  description: "\u8D44\u6E90\u70B9"
+  FoodCur: 1000
+  FoodMax: 3000
+  WoodCur: 1000
+  WoodMax: 2000
+  KnowledgeCur: 50
+  PeopleCur: 0
+  PeopleMax: 500
+  ScientistCur: 0
+  ScientistMax: 0

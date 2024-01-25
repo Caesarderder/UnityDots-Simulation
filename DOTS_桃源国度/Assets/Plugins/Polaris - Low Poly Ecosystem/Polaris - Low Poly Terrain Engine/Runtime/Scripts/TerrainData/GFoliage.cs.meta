@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7b5acb73755bceb4d8263fff5b60c004
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - terrainData: {instanceID: 0}
+  - trees: {fileID: 11400000, guid: 0af7475bfa20a88428c4fdadbd83fa37, type: 2}
+  - grasses: {fileID: 11400000, guid: a6542bf9c5c8f58429b0b70f81c0cb12, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

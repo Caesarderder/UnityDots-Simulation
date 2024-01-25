@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8957403575277752759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8957403575277752757}
+  - component: {fileID: 7958160288657557084}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8957403575277752757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8957403575277752759}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1690.5188, y: 153.30937, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7958160288657557084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8957403575277752759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b355aa909bbc4b9a9b9864fb40b06f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questManager: {fileID: 11400000, guid: dacb138678b7c2344b59c68de5dc18db, type: 2}
+  _gameState: {fileID: 11400000, guid: 159f9c22d98e249ceb08f2c5de2311a4, type: 2}
+  _addRockCandyRecipeEvent: {fileID: 11400000, guid: f1dfa8d5cf7153245aa0c66e9d73942a,
+    type: 2}
+  _cerisesMemoryEvent: {fileID: 11400000, guid: 2edac496145a36b45bc4dec85b603e1c,
+    type: 2}
+  _decideOnDishesEvent: {fileID: 11400000, guid: fb76ddbd39bb6c645a2927d483102f18,
+    type: 2}
+  _rockCandyRecipe: {fileID: 11400000, guid: edcc6c62dfac27e4585e6c798791a382, type: 2}
+  _sweetDoughRecipe: {fileID: 11400000, guid: ba3241395dceb3b4a88d8f64bc1c09c1, type: 2}
+  _finalRecipes:
+  - {fileID: 11400000, guid: 3ba31338989564e47ad2cf2c0e694ff3, type: 2}
+  - {fileID: 11400000, guid: 7509654f3f62de04dbfae5781ee40efb, type: 2}
+  _inventory: {fileID: 11400000, guid: 59c84467f7726dc4587a8373b0936f03, type: 2}

@@ -1,0 +1,1068 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f091f3fad6bf06a4d87c19bde9953ea5, type: 3}
+  m_Name: HelpDatabase
+  m_EditorClassIdentifier: 
+  entries:
+  - id: 1
+    category: 0
+    question: What is Polaris?
+    answer: "Polaris is a complete solution for creating stunning large scale stylized
+      environment, especially built for Unity developer. This is a must-have asset
+      which saves you thousands hours of work and tons of effort, give you more time
+      and resources to focus on other aspects of you game.\r"
+    links: []
+  - id: 2
+    category: 0
+    question: How to contact the developer for support?
+    answer: 'For support, report a bug or request a feature, please contact: support@pinwheel.studio'
+    links:
+    - displayText: Send an email
+      link: mailto:support@pinwheel.studio?subject=[POLARIS%20V2]%20SHORT_QUESTION&body=DETAIL_QUESTION
+  - id: 3
+    category: 0
+    question: How to contact the developer for business?
+    answer: "For business, please contact: hello@pinwheel.studio\r"
+    links:
+    - displayText: Send an email
+      link: mailto:hello@pinwheel.studio?subject=[POLARIS%20V2]%20SHORT_QUESTION&body=DETAIL_QUESTION
+  - id: 4
+    category: 0
+    question: What's new in v2.0.0?
+    answer: This is the initial release, everything is new!
+    links: []
+  - id: 5
+    category: 0
+    question: What is the different between Polaris and other low poly terrain tools?
+    answer: "Different from other stylized terrain engine, Polaris is the first one
+      which support for multi-terrains editing, empowered by GPU technologies, providing
+      the smoothest experience. It also give you the most flexible workflow by combining
+      the traditional sculpting or the modern procedural method, or somewhere in
+      between.\r"
+    links: []
+  - id: 6
+    category: 0
+    question: Does terrain generated with Polaris run well on mobile platform?
+    answer: Absolutely!
+    links: []
+  - id: 7
+    category: 0
+    question: Can I use Polaris sample assets in my commercial project?
+    answer: Yes, you can!
+    links: []
+  - id: 8
+    category: 0
+    question: Getting started with Polaris V2.
+    answer: 'Polaris terrains consist of 2 main parts, the terrain component and
+      the terrain data container, where the terrain component responsible for generate
+      geometry, assign material properties, render trees, etc.
+
+      Terrain tools
+      are built separately from the terrain component, including: Group Tool, Paint
+      Tool, Stamp Tool, Spline Tool, etc.
+
+      It support for a wide variety of
+      shading styles, so set up material correctly is very important for some terrain
+      tools to work! The Wizard can do this automatically when you create your terrain.
+
+      In
+      order to support for multi-terrains editing, some properties like Splat textures
+      and Foliage prototypes are stored as separate assets instead of bounding to
+      a single terrain.'
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.wos6f9aayczp
+  - id: 9
+    category: 0
+    question: Frequently used editor menus.
+    answer: "You can easily find Polaris functionality in these editor menus:\r\n-
+      <b>Assets>Create>Polaris>\u2026</b>: Create Polaris specific assets like Terrain
+      Data, Splat Prototypes Group, Foliage Prototypes Group, etc.\r\n- <b>GameObject>Create>3D
+      Object>Polaris>...</b>: Create terrains and terrain tools in the scene.\r\n-
+      <b>Window>Polaris>...</b>: Open additional editor window or configure Polaris
+      global settings."
+    links: []
+  - id: 10
+    category: 0
+    question: Where can I find more learning resources of this tool?
+    answer: You can visit the Online Manual, or our YouTube channel for tutorial,
+      time lapsed videos.
+    links:
+    - displayText: Online Manual
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit?usp=sharing
+    - displayText: YouTube Channel
+      link: https://www.youtube.com/channel/UCebwuk5CfIe5kolBI9nuBTg
+  - id: 11
+    category: 0
+    question: Where is the global settings of Polaris V2?
+    answer: You can edit the global settings of this tool by select <b>Window>Polaris>Project>Settings</b>.
+    links: []
+  - id: 12
+    category: 0
+    question: How to turn on/off Live Preview?
+    answer: You can turn on/off Live Preview of terrain tools by checking the Live
+      Preview option in the Inspector of each tool, or toggle it globally by checking
+      the Show Live Preview option in Polaris Settings <b>(Window>Polaris>Project>Settings)</b>.
+    links: []
+  - id: 13
+    category: 0
+    question: How to show/hide terrain chunk game objects in the Hierarchy?
+    answer: Go to <b>Window>Polaris>Project>Settings</b>, in the Inspector, check/uncheck
+      the <b>Show Geometry Chunk</b> option.
+    links: []
+  - id: 14
+    category: 0
+    question: How to change LODs transition distribution of my terrain?
+    answer: 'Go to Polaris Settings and edit the <b>Lod Transition</b> curve in the
+      Inspector, then regenerate the terrain.
+
+      This action will affect every
+      terrains in your project.'
+    links: []
+  - id: 15
+    category: 0
+    question: How to change the default settings for each newly created terrain?
+    answer: Go to Polaris Settings, expand the <b>Terrain Data Default</b> section,
+      you can find the default values defined here. For detail on each value, please
+      see the Manual.
+    links:
+    - displayText: Online Manual
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#bookmark=id.kpazk1c7vyz4
+  - id: 16
+    category: 0
+    question: How to change the default settings for terrain tools?
+    answer: Go to Polaris Settings, you can see the default settings for each tool
+      there.
+    links: []
+  - id: 17
+    category: 0
+    question: What would happen if I delete the Polaris Settings asset?
+    answer: <b>DON'T DO THAT!</b> Otherwise you will mess the whole system up!
+    links: []
+  - id: 18
+    category: 0
+    question: Is there any high quality low poly, stylized asset I can use to build
+      my scene?
+    answer: 'We have many asset suggestions to use with this tool. All of them are
+      high quality.
+
+      Go to <b>Window>Polaris>Explore>...</b> to find them,
+      or use the links below.'
+    links:
+    - displayText: Assets from Pinwheel
+      link: https://assetstore.unity.com/publishers/17305?aid=1100l3QbW&Pubref=polaris2editor
+    - displayText: Vegetation assets
+      link: https://assetstore.unity.com/lists/stylized-vegetation-120082?aid=1100l3QbW&Pubref=polaris2editor
+    - displayText: Rock and props assets
+      link: https://assetstore.unity.com/lists/stylized-rock-props-120083?aid=1100l3QbW&Pubref=polaris2editor
+    - displayText: Water assets
+      link: https://assetstore.unity.com/lists/stylized-water-120085?aid=1100l3QbW&Pubref=polaris2editor
+    - displayText: Sky and ambient assets
+      link: https://assetstore.unity.com/lists/stylized-sky-and-ambient-120088?aid=1100l3QbW&Pubref=polaris2editor
+    - displayText: Character assets
+      link: https://assetstore.unity.com/lists/stylized-character-120084?aid=1100l3QbW&Pubref=polaris2editor
+  - id: 19
+    category: 0
+    question: How to upgrade my terrain to use Lightweight Render Pipeline (LWRP)?
+    answer: 'Do the following steps to upgrade to LWRP:
+
+      1. Import related
+      packages: Open the Package Manager and import <b>Lightweight RP (com.unity.render-pipeline.lightweight)</b>
+      and <b>Shader Graph (com.unity.shadergraph)</b>.
+
+      2. Re-configure Polaris:
+      go to <b>Window>Polaris>Project>Update Dependencies</b>
+
+      3. Update terrain
+      material: Select an appropriate terrain shader, they are provided under <b>Polaris/LWRP/Terrain/...</b>
+      shader group. Newly created terrain will be configure automatically by the
+      Wizard.
+
+      4. Update tree billboard material: Use the <b>Polaris/LWRP/Foliage/TreeBillboard</b>
+      shader for your Billboard asset material.
+
+      5. Update 3rd parties art
+      assets material: Use shaders provided under <b>Lightweight Render Pipeline/...</b>
+      group.'
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.u98e37tgk5kx
+  - id: 20
+    category: 0
+    question: How to upgrade my terrain to use High Definition Render Pipeline (HDRP)?
+    answer: The High Definition Render Pipeline (HDRP) is not supported yet. This
+      feature will be added until HDRP is out of preview.
+    links: []
+  - id: 21
+    category: 0
+    question: How to create a new terrain?
+    answer: 'Go to <b>GameObject>3D Object>Polaris>Stylized Terrain (Wizard)</b>,
+      this will bring up a window for material config. Depend on your project, select
+      an appropriate Lighting Model and Texturing Model, then click Create.
+
+      Your
+      terrain game object should appear in the Hierarchy, and your terrain data with
+      related stuffs will appear in the <b>Assets/</b> directory.'
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.bzz4mwzhr8w5
+  - id: 22
+    category: 0
+    question: Where is my Terrain Data stored?
+    answer: After created, you terrain data asset will be stored in <b>Assets/</b>
+      directory with some related stuffs. You can move them to other directory for
+      better organization.
+    links: []
+  - id: 23
+    category: 0
+    question: What do Geometry properties mean?
+    answer: To learn more about Geometry properties, click the link below.
+    links:
+    - displayText: Online Manual
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#bookmark=id.jd7837nv2rli
+  - id: 24
+    category: 0
+    question: What do Shading properties mean?
+    answer: To learn more about Shading properties, click the link below.
+    links:
+    - displayText: Online Manual
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#bookmark=id.jd7837nv2rli
+  - id: 25
+    category: 0
+    question: What do Rendering properties mean?
+    answer: To learn more about Rendering properties, click the link below.
+    links:
+    - displayText: Online Manual
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#bookmark=id.jd7837nv2rli
+  - id: 26
+    category: 0
+    question: What do Foliage properties mean?
+    answer: To learn more about Foliage properties, click the link below.
+    links:
+    - displayText: Online Manual
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#bookmark=id.f6p2gwpxaut5
+  - id: 27
+    category: 0
+    question: What do General properties mean?
+    answer: To learn more about General properties, click the link below.
+    links:
+    - displayText: Online Manual
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#bookmark=id.f6p2gwpxaut5
+  - id: 28
+    category: 0
+    question: How to connect terrains together?
+    answer: "Select a terrain, in the Inspector, under General foldout, you can see
+      4 slot corresponding to its 4 neighbors. \nAssign the neighbor into appropriate
+      slot.\nNote that linking them on a single terrain is not enough, you have to
+      link them on both side."
+    links: []
+  - id: 29
+    category: 1
+    question: My geometry seam across terrains doesn't match up, how to fix it?
+    answer: 'To match geometry seam across terrains in the scene, you have to link
+      them together, then re-generate them.
+
+      Moreover, some geometry properties
+      must be identical between them:
+
+      - Width
+
+      - Height
+
+      - Length
+
+      -
+      Mesh Base Resolution
+
+      - Mesh Resolution
+
+      - Chunk Grid Size
+
+      You
+      should use Group Tool to manage these properties easier.'
+    links:
+    - displayText: How to connect terrains together?
+      link: ~How to connect terrain together?
+    - displayText: How to use Group Tool?
+      link: ~How to use Group Tool?
+  - id: 30
+    category: 0
+    question: What is terrain Group Id?
+    answer: "It is an integer number to group terrains in the scene. This will affect
+      how terrain tools work. For example you can have terrains in the play area
+      with Group Id 0, and terrain in the background with Group Id 1, etc.\r"
+    links: []
+  - id: 31
+    category: 1
+    question: How to save some storage memory of Terrain Data?
+    answer: 'It is important to optimize your memory usage. For Terrain Data, you
+      can save some megabytes by reducing the resolution of unused maps.
+
+      For
+      example, if your shading model is Lambert Gradient Lookup, then the following
+      map maybe unused:
+
+      - Metallic Map
+
+      - Splat Control Maps
+
+      Set
+      the resolution of these maps to its lowest value (32).
+
+      Furthermore,
+      instead of having a super high resolution of height map, such as 4k, which
+      doesn''t make sense with low poly, we can reduce it to somewhere around 512
+      or 1024.'
+    links: []
+  - id: 32
+    category: 0
+    question: What kind of data is packed in the Height Map?
+    answer: 'Polaris V2 combined several geometrical infomation in a single height
+      map to optimize data storage and sampling speed. Each channel in the Height
+      Map represent different things:
+
+      - RG: normalized height value, encoded.
+
+      -
+      B: additional subdivision level. (G value of 0.1 equals to 1 step of subdivision).
+
+      -
+      A: visibility value, polygon with this value higher than 0.5 will be strip
+      off.'
+    links: []
+  - id: 33
+    category: 0
+    question: How to create a Splat Prototypes Group?
+    answer: Go to <b>Assets>Create>Polaris>Splat Prototypes Group</b> and give the
+      asset an appropriate name. Select the asset, in the Inspector, try drop a texture
+      into the selector box, you should see the prototype appear.
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.ub8ldu9so77
+    - displayText: Setting up terrain for Splat painting.
+      link: ~Setting up terrain for Splat painting
+  - id: 34
+    category: 0
+    question: How to create a Tree Prototypes Group?
+    answer: Go to <b>Assets>Create>Polaris>Tree Prototypes Group</b> and give the
+      asset an appropriate name. Select the asset, in the Inspector, try drop a prefab
+      into the selector box, you should see the prototype appear.
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.ft36k6vrb5pg
+    - displayText: Setting up terrain for Tree painting.
+      link: ~Setting up terrain for Tree painting
+  - id: 35
+    category: 0
+    question: How to create a Grass Prototypes Group?
+    answer: Go to <b>Assets>Create>Polaris>Grass Prototypes Group</b> and give the
+      asset an appropriate name. Select the asset, in the Inspector, try drop a grass
+      texture into the selector box, you should see the prototype appear.
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.ddi7l7ag8rvo
+    - displayText: Setting up terrain for Grass painting.
+      link: ~Setting up terrain for Grass painting
+  - id: 36
+    category: 4
+    question: How to create a Billboard Asset?
+    answer: 'Polaris comes with a handy Billboard Asset creator to use with tree
+      rendering. Go to <b>Window>Polaris>Tools>Billboard Creator</b> to open the
+      editor.
+
+'
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.lpjmpvn8ugzc
+  - id: 37
+    category: 4
+    question: What is a Billboard Asset?
+    answer: 'Billboard Asset describes how a billboard is rendered.
+
+      Billboards
+      are a level-of-detail (LOD) method of drawing complicated 3D objects in a simpler
+      manner if they are further away.
+
+      For more infomation, please visit Unity
+      Documentation.'
+    links:
+    - displayText: Unity Documentation.
+      link: https://docs.unity3d.com/ScriptReference/BillboardAsset.html
+  - id: 38
+    category: 4
+    question: What is the fastest way to fit my billboard images into the atlas in
+      Billboard Creator?
+    answer: On the right pane of the Billboard Creator, expand the Utilities section
+      and hit Fit Camera.
+    links: []
+  - id: 39
+    category: 4
+    question: How to toggle Alpha channel in Billboard Creator?
+    answer: Click the <b>A</b> button on its toolbar.
+    links: []
+  - id: 40
+    category: 1
+    question: Trees and Grasses on my terrain disappeared, how to fix it?
+    answer: 'Select the terrain, there are several thing that would affect foliage
+      rendering:
+
+      - Make sure you have assigned <b>Tree & Grass Prototypes
+      Group</b> for it.
+
+      - Make sure there are foliages on you terrain, the
+      <b>instance count</b> is listed under Foliage section.
+
+      - Under the Rendering
+      section, enable <b>Draw Foliage</b> and set appropriate <b>Billboard Start,
+      Tree Distance, Grass Distance</b> values.'
+    links: []
+  - id: 41
+    category: 2
+    question: What is Group Tool?
+    answer: "Group Tool provides a simple and easy way to override properties across
+      tiles in a group, selectively, at once! \r\nUsually, Group Tool is automatically
+      created when you add the first terrain into the scene. If not, go to <b>GameObject>3D
+      Object>Polaris>Tools>Group</b> to add one."
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.1dp5fklhpfxe
+  - id: 42
+    category: 2
+    question: How to create a Group Tool object?
+    answer: Usually, Group Tool is automatically created when you add the first terrain
+      into the scene. If not, go to <b>GameObject>3D Object>Polaris>Tools>Group</b>
+      to add one.
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.1dp5fklhpfxe
+  - id: 43
+    category: 2
+    question: Can I have multiple Group Tool object in a scene?
+    answer: 'Yes, you can.
+
+      It is practical to have multiple Group Tool object
+      in a scene for better management where each instance will drive a terrain group.'
+    links: []
+  - id: 44
+    category: 2
+    question: How to override a properties using Group Tool?
+    answer: To do that, turn on the checkbox on the left of the properties you want
+      to override, then enter your values.
+    links: []
+  - id: 45
+    category: 2
+    question: Is it possible to override multiple properties before re-generate terrains
+      using Group Tool?
+    answer: Yes, turn on the <b>Deferred Update</b> option, then override your properties.
+      Finally, hit <b>Update</b>.
+    links:
+    - displayText: How to override a properties?
+      link: ~How to override a properties using Group Tool?
+  - id: 46
+    category: 2
+    question: How to automatically align, re-arrange terrains in the scene using
+      Group Tool?
+    answer: 'Select the Group Tool instance, under Re-Arrange section, hit Re-Arrange.
+
+      However,
+      this function have some requirement to work correctly:
+
+      - <b>Width</b>
+      and <b>Length</b> properties have to be overriden.
+
+      - <b>Neighbor connection</b>
+      between terrains have to be set.
+
+      <b>Note:</b> this function does not
+      ensure terrain to place around world origin point.'
+    links: []
+  - id: 47
+    category: 2
+    question: How to assign a terrain into a group?
+    answer: Select the terrain, under <b>General</b> section, set its <b>Group Id</b>
+    links: []
+  - id: 48
+    category: 3
+    question: What is Backup Tool?
+    answer: Backup Tool is a robust, non-linear way to store/restore editing history,
+      a companion of Unity built-in Undo system when working with Polaris V2.
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.ov02t6kaoi2g
+  - id: 49
+    category: 3
+    question: How to open the Backup Tool?
+    answer: Go to <b>Window>Polaris>Tools>Backup</b>
+    links: []
+  - id: 50
+    category: 3
+    question: What is the different between Backup and History?
+    answer: They are both compressed terrain data, where Backup remains on disk across
+      editor sections, and History will be flushed when the editor closed.
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#bookmark=id.a6obghvy5o24
+  - id: 51
+    category: 3
+    question: How to create a Backup entry?
+    answer: 'In the Backup editor, under <b>Create Backup</b> section, select your
+      desired Group Id, give the backup a name, then hit Create.
+
+      The created
+      Backup will be listed under <b>Available Backups</b> section.'
+    links: []
+  - id: 52
+    category: 3
+    question: How to create a History entry?
+    answer: 'History entries are automatically created by terrain tools, they are
+      listed under History section.
+
+      To create History for your custom terrain
+      tool, please contact me directly for more detail instruction.'
+    links:
+    - displayText: Send an email.
+      link: mailto:support@pinwheel.studio?subject=[POLARIS%20V2]%20SHORT_QUESTION&body=DETAIL_QUESTION
+  - id: 53
+    category: 3
+    question: How to restore a Backup/History entry?
+    answer: Simply click on it.
+    links: []
+  - id: 54
+    category: 3
+    question: How to delete a Backup/History entry?
+    answer: 'Right click on it, select Delete and confirm.
+
+      <b>This action
+      cannot be undone!</b>'
+    links: []
+  - id: 55
+    category: 3
+    question: How to delete all History entries?
+    answer: 'Click on Clear button on the right of the History foldout, then confirm.
+
+      <b>This
+      action cannot be undone!</b>'
+    links: []
+  - id: 56
+    category: 3
+    question: Where can I find Backup and History entries on disk?
+    answer: They are store in PolarisBackup folder, as the same level with Assets
+      folder.
+    links: []
+  - id: 57
+    category: 3
+    question: How to keep History entries from being deleted when the Unity Editor
+      is closed?
+    answer: Go to Polaris Settings, under Backup Tool Settings, select <b>Dont Clear
+      History On Editor Exit</b>.
+    links:
+    - displayText: Where is Polaris Settings?
+      link: ~Where is Polaris Settings?
+  - id: 58
+    category: 3
+    question: How to fix memory error when creating Backup/History?
+    answer: 'Backup Tool preserves a fix amount of memory which is used for compression
+      and decompression. Sometime you may encounter an error related to memory, because
+      your texture resolution are too high or there is many terrains in the group.
+
+      To
+      fix this, go to Polaris Settings, under Backup Tool Settings, increase the
+      amount of <b>Buffer Size MB</b> then retry.'
+    links: []
+  - id: 59
+    category: 5
+    question: What is Paint Tool?
+    answer: Paint Tool let you sculpt terrain geometry, apply color and texture,
+      spawn trees and grasses onto terrain surface. It is quite similar to other
+      image processing softwares.
+    links:
+    - displayText: Geometry and Texture painter.
+      link: ~Geometry and Texture painter.
+    - displayText: Foliage painter.
+      link: ~Foliage painter.
+  - id: 60
+    category: 5
+    question: How to create a Geometry and Texture painter?
+    answer: "Usually, it will be automatically created when you add the first terrain
+      into the scene. If not, go to <b>GameObject>3D Object>Polaris>Tools>Geometry
+      - Texture Painter</b> to create one.\r"
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.jhx3p8jeipnu
+  - id: 61
+    category: 5
+    question: How to quickly switch between paint mode?
+    answer: 'You can change paint mode by click on the Mode drop down in the inspector.
+
+      In
+      the Scene view, you can use function key <b>F1, F2, ..., Fn</b> to switch between
+      them.'
+    links: []
+  - id: 62
+    category: 5
+    question: How to change painter brush size, rotation and opacity using hotkeys?
+    answer: 'In the Scene View, you can use these hot key to quickly change brush
+      sizez, rotation and opacity:
+
+      - ''-'' and ''='': change brush size.
+
+      -
+      ''['' and '']'': change brush rotation.
+
+      - '';'' and '''''': change brush
+      opacity.'
+    links: []
+  - id: 63
+    category: 5
+    question: What is the usage of each paint mode?
+    answer: Each paint mode has different usage, please see the Manual for detail.
+    links:
+    - displayText: Online Manual.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#bookmark=id.mqtrs6c9qsjv
+  - id: 64
+    category: 5
+    question: My painter doesn't record History for undo, how to fix it?
+    answer: 'Paint Tool have an option to enable/disable History recording.
+
+      Select
+      the painter, in the Inspector, check on the <b>Enable History</b> option.'
+    links: []
+  - id: 65
+    category: 5
+    question: The editor slightly lag when I release my mouse on painting, how to
+      fix it?
+    answer: 'The issue is caused by History recording, you can fix it by one of the
+      following method:
+
+      - Split terrains into several smaller group.
+
+      -
+      Reduce terrain texture resolution.
+
+      - Disable History recording by turn
+      off the <b>Enable History</b> option in the Inspector. This way you can no
+      longer perform undo/redo when making a mistake.
+
+      However, this also happen
+      when working with Grass Painter, because it have to do some batching and optimization.
+      Be patient!'
+    links: []
+  - id: 66
+    category: 5
+    question: How to add custom brush mask to use with Paint Tool?
+    answer: "To add custom brush mask, simply put your texture into the <b>Assets/Polaris/Resources/Brushes</b>
+      directory, then disable-enable the painter component for the brushes to be
+      reloaded.\r"
+    links: []
+  - id: 67
+    category: 0
+    question: The Paint Tool does nothing to my terrain, how to fix it?
+    answer: "Sometime the result doesn\u2019t show up when painting, this is caused
+      mainly by incorrect material setup, where the material doesn\u2019t use the
+      texture which the painter is working on. For example: painting splat on a gradient
+      lookup material doesn\u2019t show anything."
+    links:
+    - displayText: Materials and shading styles in Polaris V2.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#bookmark=id.z9savm4lzmgg
+  - id: 68
+    category: 5
+    question: Set up terrain for color painting.
+    answer: 'For the Color painter (aka Albedo painter) to work, you have to choose
+      a material that utilize Albedo map (ex: Standard shader, Gradient Lookup variation),
+      assign that material to the terrain and you are ready to go.
+
+'
+    links: []
+  - id: 69
+    category: 5
+    question: Set up terrain for metallic and smoothness painting.
+    answer: 'For the Metallic, Smoothness painter to work, you have to choose a material
+      that utilize Metallic map (ex: Standard shader, Gradient Lookup variation),
+      assign that material to the terrain and you are ready to go.
+
+'
+    links: []
+  - id: 70
+    category: 5
+    question: Set up terrain for splats/textures painting.
+    answer: 'For the Splat painter to work, you have to:
+
+      - Choose a material
+      that utilize splat maps (ex: Lambert 4 Splats, Lambert 4 Splats 4 Normals,
+      etc.), assign that material to the terrain.
+
+      - Create and assign a Splat
+      Prototypes Group to the terrain.
+
+      Then, you are ready to paint!'
+    links:
+    - displayText: How to create a Splat Prototypes Group?
+      link: ~How to create a Splat Prototypes Group?
+  - id: 71
+    category: 5
+    question: Set up terrain for tree painting.
+    answer: For the Tree painter to work, you have to create a Tree Prototypes Group
+      and assign it to the terrain, then you are ready to go.
+    links:
+    - displayText: How to create a Tree Prototype Group?
+      link: ~How to create a Tree Prototypes Group?
+  - id: 72
+    category: 5
+    question: Set up terrain for grass painting.
+    answer: For the Grass painter to work, you have to create a Grass Prototypes
+      Group and assign it to the terrain, then you are ready to go.
+    links:
+    - displayText: How to create a Grass Prototype Group?
+      link: ~How to create a Grass Prototypes Group?
+  - id: 73
+    category: 5
+    question: How to create a Foliage Painter?
+    answer: "Usually, it is automatically created when you add the first terrain.
+      If not, go to <b>GameObject>3D Object>Polaris>Tools>Foliage Painter</b> to
+      add one.\r"
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.as83fysh5mjb
+  - id: 74
+    category: 5
+    question: How to add some randomness to spawned trees and grasses using Foliage
+      Filter?
+    answer: 'Initially, painted instances will have default transform properties
+      (rotation of 0 and scale of 1), this will introduce a repetitive pattern. To
+      add some randomness, you can use some filters. To add a filter, click on Add
+      Filter button and select one of them.
+
+      There are several filter types:
+
+      -
+      Distance Constraint
+
+      - Height Constraint
+
+      - Slope Constraint
+
+      -
+      Randomize Rotation
+
+      - Randomize Scale
+
+      - Clamp Scale'
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#bookmark=id.sbdszhxy8qyx
+  - id: 75
+    category: 5
+    question: How to bypass a Foliage Filter?
+    answer: In the Inspector, check on the Ignore option.
+    links: []
+  - id: 76
+    category: 6
+    question: What is Spline Creator?
+    answer: "Spline Creator is a handy tool to perform some specific operation along
+      a spline like making ramp, painting path or spawning trees, etc.\r"
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.xhfsmg37exv5
+  - id: 77
+    category: 6
+    question: How to create a Spline Creator?
+    answer: "To add a Spline Creator into your scene, go to <b>GameObject>3D Object>Polaris>Tools>Spline</b>.
+      \r"
+    links: []
+  - id: 78
+    category: 6
+    question: How to modify splines with Spline Creator?
+    answer: "There are some actions when working with spline:\r\n- Left Click: select
+      an Anchor or Segment\r\n- Shift Click: Add a new Anchor, this anchor will automatically
+      connected to the selected one and may create a new branch.\r\n- Shift Click
+      between 2 anchors: connect 2 anchors.\r\n- Ctrl Click: remove an Anchor or
+      Segment.\r\n- Ctrl Click on the dotted line: snap the Anchor onto surface.\r"
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.xhfsmg37exv5
+  - id: 79
+    category: 6
+    question: What is and how to use Spline Modifier?
+    answer: "The Spline Creator only responsible for creating base spline. To apply
+      an operation based on that spline, you have to add a Spline Modifier, by click
+      on Add Modifier:\r\n- Ramp Maker: making a ramp by modify terrain Height map.\r\n-
+      Path Painter: making a path by painting on Albedo or Splat map.\r\n- Foliage
+      Spawner: spawn trees and grasses along the path.\r\n- Foliage Remover: clear
+      trees and grasses along the path.\r"
+    links: []
+  - id: 80
+    category: 7
+    question: What is Geometry Stamper?
+    answer: It is a terrain tool which let you stamp features onto terrain surface,
+      using a mask texture and some special math operation.
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.nm2lixy4g6y2
+  - id: 81
+    category: 7
+    question: How to create a Geometry Stamper?
+    answer: "Go to <b>GameObject>3D Object>Polaris>Tools>Stampers</b>, this will
+      create other kind of stamper like Texture Stamper and Foliage Stamper, etc.\r"
+    links: []
+  - id: 82
+    category: 7
+    question: What is the formula behind each geometry stamp operations?
+    answer: We have a section describes each operation in the Manual, please see
+      it for more detail.
+    links:
+    - displayText: Online Manual.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#bookmark=id.vegas3xw5x1k
+  - id: 83
+    category: 7
+    question: How to move, rotate and scale the stamper?
+    answer: 'There are 2 ways to do that:
+
+      - Modify the Position, Rotation
+      and Scale properties in the Inspector.
+
+      - Use the transform handle in
+      the scene view, press W, E, R to switch between move, rotate and scale tool.'
+    links: []
+  - id: 84
+    category: 0
+    question: Terrain tools don't display Live Preview, how to fix it?
+    answer: 'For Live Preview to show in the scene view, make sure:
+
+      - You
+      have turn it on.
+
+      - Your terrain rotation is (0,0,0) and scale is (1,1,1).
+      It will be disable if you have different rotation and scale.'
+    links:
+    - displayText: How to turn on Live Preview?
+      link: ~How to turn on Live Preview?
+  - id: 85
+    category: 7
+    question: How to add more detail/subdivision to terrain geometry after stamping?
+    answer: You can increase the <b>Additional Mesh Resolution</b> value.
+    links: []
+  - id: 86
+    category: 7
+    question: What is Texture Stamper?
+    answer: It is a terrain tool which let you perform procedural texturing onto
+      the terrain surface, instead of painting by hand.
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.taksayu2wvh6
+  - id: 87
+    category: 7
+    question: How to create a Texture Stamper?
+    answer: "Go to <b>GameObject>3D Object>Polaris>Tools>Stampers</b>. This will
+      create other types of stampers as well.\r"
+    links: []
+  - id: 88
+    category: 7
+    question: How Texture Stamper works?
+    answer: 'Texture Stamper also has basic properties similar to Geometry Stamper
+      to define the shape. In additional, it is consist of multiple stamp layer,
+      which will be apply one by one onto the surface. '
+    links:
+    - displayText: Geometry Stamper.
+      link: ~Geometry Stamper
+  - id: 89
+    category: 7
+    question: What is the meaning of each Texture Stamper property?
+    answer: We have a section describes this in detail, see the Online Manual.
+    links:
+    - displayText: Online Manual.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#bookmark=id.uc4nhyo1smfb
+  - id: 90
+    category: 7
+    question: What is noise origin, frequency, laccunarity, persistence, octaves?
+    answer: The video below is an excellent explanation for that.
+    links:
+    - displayText: YouTube
+      link: https://www.youtube.com/watch?v=wbpMiKiSKm8&list=PLFt_AvWsXl0eBW2EiBtl_sxmDtSgZBxB3&index=1
+  - id: 91
+    category: 7
+    question: What is Foliage Stamper?
+    answer: It is a terrain tool which let you perform procedural foliage placement
+      instead of painting by hand.
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.oz4ufiex48pa
+  - id: 92
+    category: 7
+    question: How to create a Foliage Stamper?
+    answer: Go to GameObject>3D Object>Polaris>Tools>Stampers. This will create other
+      types of stamper too.
+    links: []
+  - id: 93
+    category: 7
+    question: What is the meaning of each Foliage Stamper layer property?
+    answer: We have a section describes this in detail, see the Online Manual.
+    links:
+    - displayText: Online Manual.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#bookmark=id.bijhtgmjx3ep
+  - id: 94
+    category: 7
+    question: It took too long for grass stamping, how to fix it?
+    answer: "Grass stamping maybe time-consuming since it have to perform some batching
+      and optimization. It\u2019s better to stamp on a particular region instead
+      of a whole terrain to avoid the editor from hanging too long."
+    links: []
+  - id: 95
+    category: 1
+    question: How to fix missing polygon when working with geometry?
+    answer: "Sometime you can see some polygon is missing on the surface, to fix
+      this, you can use a geometry painter to paint over the missing spot, it will
+      regenerate and close the gap. \nThe best painter type to use in this situation
+      is Subdiv Painter."
+    links: []
+  - id: 96
+    category: 0
+    question: How to create Tree Colliders?
+    answer: "Tree Collider component is automatically added as a child game object
+      of your terrain. Each Tree Collider will track only one target, to have more
+      target, you can add another Tree Collider by go to <b>GameObject>3D Object>Polaris>Tree
+      Collider</b>.\r"
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.tyfjeebxpmaf
+  - id: 97
+    category: 0
+    question: Prepare for Nav Mesh baking.
+    answer: "Terrain geometry will be automatically marked as Navigation Static,
+      so Unity can easily grab it for nav mesh baking. However, trees rendered with
+      Polaris are not game objects, so Unity don\u2019t know how to carve holes on
+      the nav mesh for more precise result. You have to use a <b>Navigation Helper</b>
+      tool to deal with this. Go to <b>GameObject>3D Object>Polaris>Tools>Navigation
+      Helper</b> to create one.\n"
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.u98e37tgk5kx
+  - id: 98
+    category: 5
+    question: How to cut a hole on terrain surface to create a cave entrance?
+    answer: You can use the Visibility Painer.
+    links: []
+  - id: 99
+    category: 0
+    question: How to create geometry bridges and overhangs?
+    answer: Polaris V2 doesn't support for this yet, you have to create separate
+      3D models and put them into the scene.
+    links: []
+  - id: 100
+    category: 0
+    question: What's new in v2.0.1?
+    answer: '- New tool: Navigation Helper for carving holes when baking NavMesh.
+
+      -
+      New tool: Help Tool for quickly search for FAQ right in the editor.
+
+      -
+      New component: Tree Collider.
+
+      - Faster geometry generation, adding
+      vertex displacement, Polygon Processor system to inject vertex modification
+      into generation process.
+
+      - Backup files now store outside of Assets
+      folder.
+
+      - Allow drag and drop Terrain Data into Hierarchy & Scene View
+      to recreate the terrain.'
+    links: []
+  - id: 101
+    category: 5
+    question: Set up terrain for vertex color painting.
+    answer: 'Do the following step:
+
+      - Select the terrain, under Geometry foldout,
+      set the Polygon Processor to <b>Albedo To Vertex Color</b> or <b>Albedo To
+      Vertex Color (Sharp)</b>. This will convert albedo map color to vertex color
+      after polygon generation.
+
+      - Select the Texture Painter, turn on <b>Force
+      Update Geometry</b>, set paint mode to <b>Albedo</b>.
+
+      - Paint.
+
+      <b>Your
+      terrain material should support for vertex color for it to work!</b>'
+    links: []
+  - id: 102
+    category: 0
+    question: What's new in v2.1.0?
+    answer: "<b>NEW FEATURES:\r</b>\n- Unity Undo compatible: Undo/Redo work seamlessly
+      with Backup system by Ctrl+Z and Ctrl+Y.\r\n- Terrain Pinning & Auto Connect:
+      create neighbor terrain and connect adjacent tiles in one click.\r\n- Detail
+      Mesh: painting and rendering a huge amount of environment detail like rocks,
+      debrises, etc.\r\n- Brush Dynamic: more control over brush stroke like radius
+      jitter, opacity jitter, scatter, etc.\r\n- Data Importer: import data from
+      Unity terrain data, Polaris V1 data, RAW files and textures.\r\n- Data Exporter:
+      export data to Unity terrain data, RAW files and textures.\r\n- Unity Terrain
+      Converter: convert a group of Unity Terrain to low poly, migrate from 3rd parties
+      tools like Gaia, MapMagic and TerrainComposer is easier than ever!\r\n- Debug
+      Mode: visualize recently updated chunks in the Scene View, and more.\r\n<b>IMPROVEMENTS:</b>\r\n-
+      Height Map: now switch to RGBAFloat format for more precise elevation data.\r\n-
+      Grass/Detail: now can align to surface normal vector.\r\n- Paint Tool cursor:
+      now follow geometry contour for more comfortable experience.\r\n- Editor GUI
+      revision: more consistent and organize design.\r\n- Grass mesh batching: now
+      run asynchronously in the background.\r\n- Generated data storage: more efficient
+      and compact.\r\n- Stampers: smoother live preview, faster stamping process.\r\n-
+      Foliage rendering & Tree Collider: improve performance.\r\n- Geometry generation:
+      reduce memory usage.\r\n<b>FIXES:</b>\r\n- Fix tree/grass incorrect position
+      after geometry modification.\r\n- Fix foliage rendering culling issues."
+    links: []
+  - id: 103
+    category: 0
+    question: How to quickly create and connect adjacent terrain tiles?
+    answer: 'Use the Terrain Pinning and Auto Connect: select a terrain, expand it
+      Neighboring foldout, then click one of the 4 squares appear in the Scene View,
+      next to the selected terrain. A new one will be create and connect automatically.'
+    links:
+    - displayText: Learn more.
+      link: https://docs.google.com/document/d/1LQooyrEl2S5qP3w2cvX0RYy1CQvUs6mIBACJ8wNhSnE/edit#heading=h.1bydu4ba8qe9
+  - id: 104
+    category: 9
+    question: How to import data to Polaris Terrain?
+    answer: 'Select a terrain, expand it Data foldout, click on Import, you can choose
+      to import data from:
+
+      - Unity Terrain Data
+
+      - Polaris V1 Data (Requires
+      Polaris V1 imported)
+
+      - RAW files, 8 bits or 16 bits (.raw, .r16)
+
+      -
+      Textures'
+    links: []
+  - id: 105
+    category: 9
+    question: How to export Polaris data to files?
+    answer: 'Select a terrain, expand it Data foldout, click on Export, you can choose
+      to export data to:
+
+      - Unity Terrain Data
+
+      - RAW files, 8 bits or
+      16 bits (.raw, .r16)
+
+      - Textures'
+    links: []
+  - id: 106
+    category: 9
+    question: How to convert Unity Terrain to low poly?
+    answer: "Polaris provides a handy tool to help you to easier migrate from 3rd
+      parties\u2019 tools like Gaia, MapMagic and TerrainComposer by convert a Unity
+      terrain group to low poly. <b>Right click on the root game object</b> of the
+      terrain group, select <b>3D Object>Polaris>Convert From Unity Terrain</b>.\nSelect
+      what you want to import and where to store converted data, then hit Convert.\r"
+    links: []

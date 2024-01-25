@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b712840779f4647baae93e0b9355d2, type: 3}
+  m_Name: EnvironmentStructures_TotalGameAssets
+  m_EditorClassIdentifier: 
+  prototypes:
+  - {fileID: 1251076026957028, guid: 8076c64c27533d64eb3b5ca28b94e190, type: 3}
+  - {fileID: 1998133714116002, guid: e6f9cb2853881bb4399d4dbc6399ffe0, type: 3}
+  - {fileID: 1730843818418354, guid: e3d650ec0707a62408ab5bd72773a326, type: 3}
+  - {fileID: 1242663055657992, guid: c1ea5178c70ddd547902bdaa4e97d92b, type: 3}
+  - {fileID: 1582968130965666, guid: 7012ab91eb52ada4b9222fed13391e01, type: 3}
+  editor_PrefabAssetPaths:
+  - Assets/Polaris - Low Poly Ecosystem/Polaris V2 - Low Poly Terrain Engine/Samples/Total
+    Game Assets/Prefabs/prefab_polytope_wind_turbine.prefab
+  - Assets/Polaris - Low Poly Ecosystem/Polaris V2 - Low Poly Terrain Engine/Samples/Total
+    Game Assets/Prefabs/prefab_polytope_windmill.prefab
+  - Assets/Polaris - Low Poly Ecosystem/Polaris V2 - Low Poly Terrain Engine/Samples/Total
+    Game Assets/Prefabs/prefab_polytope_water_tower.prefab
+  - Assets/Polaris - Low Poly Ecosystem/Polaris V2 - Low Poly Terrain Engine/Samples/Total
+    Game Assets/Prefabs/prefab_polytope_teepee02.prefab
+  - Assets/Polaris - Low Poly Ecosystem/Polaris V2 - Low Poly Terrain Engine/Samples/Total
+    Game Assets/Prefabs/prefab_polytope_campervan.prefab

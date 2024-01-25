@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Inventory Item Description_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 63bf683e4210c4e48a201dfa773125d5, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 24381302830690304
+    m_Localized: Ceci est un couteau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35059626239057920
+    m_Localized: "La soupe de homard est une recette de famille transmise de p\xE8re
+      en fils. Elle est faite de la chair de homard au rouge le plus brillant et
+      des citrons les plus juteux."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38479410477654016
+    m_Localized: Ceci est un marteau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38480203641511936
+    m_Localized: Ceci est un citron jaune
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38489264286064640
+    m_Localized: On trouve ce homard rouge sur les differentes plages de l'ile. Il
+      est connu pour sa chair tendre.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38489896376066048
+    m_Localized: "Ceci est un oeuf d'une cr\xE9ature visqueuse"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38490832171425792
+    m_Localized: Ceci est du gingembre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38492819038396416
+    m_Localized: Ceci est une citronnade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40615197902102528
+    m_Localized: "Cette soupe de homard est un pur d\xE9lice ! Tout le monde aime
+      l'arri\xE8re-go\xFBt citronn\xE9 de la chair de homard subtilement sucr\xE9
+      et la note rafraichissante de gingembre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40617814095028224
+    m_Localized: "La pizza hawaienne est un plat tr\xE9s connu sur l'ile. Les habitants
+      du village adorent le mix sucr\xE9 sal\xE9 de son gout. Certain disent que
+      l'ananas est un fruit et qu'il ne doit pas \xEAtre utilis\xE9 pour faire une
+      pizza. Et bien la tomate est aussi un fruit. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68458788392763392
+    m_Localized: "Ceci est un oeuf d'une cr\xE9ature de roche"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

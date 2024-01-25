@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: LocationScenes
+  m_EditorClassIdentifier: 
+  m_GroupName: LocationScenes
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 3e3a1c93f500e3d45adb64bf8e9a3865
+  m_SerializeEntries:
+  - m_GUID: dfaf60263d5c5dc4e80e2793f4328b32
+    m_Address: Assets/Scenes/Locations/Beach.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b364a71d126b2bf44a2f4b006b35d4b7
+    m_Address: Assets/Scenes/Locations/Field_Farms.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 218e6671d4cfc6749964fe4102dd0289
+    m_Address: Assets/Scenes/Locations/Field_Hill.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 64585765faee8c446aef91d5a46a55f9
+    m_Address: Assets/Scenes/Locations/Forest.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e0e126273a41560478edee1d4da8e864
+    m_Address: Assets/Scenes/Locations/Mountain_Path.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c5d9eca142485be458a92b89d3b36aa3
+    m_Address: Assets/Scenes/Locations/Town_Inner.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0641128c808cd8245b65056040f8e4d6
+    m_Address: Assets/Scenes/Locations/Town_Market.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ac54d88144e5bf442ae5747c5ae42172
+    m_Address: Assets/Scenes/Locations/Town_Upper.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6be6d97bb5fe2b94fba95f105dd436ae
+    m_Address: Assets/Scenes/Locations/Mountain_Cave.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2b208cb05dafb3a4cbeca8c493e4a6e2
+    m_Address: Assets/Scenes/Locations/Beach_Night.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: bffab80dc16c4464b92b2e97b6a1964c, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: fe96b755b43eb914a94c58d61fb0c931, type: 2}
+    - {fileID: 11400000, guid: 9b257e9ab37e5ea4b97ce2edd96c10a2, type: 2}

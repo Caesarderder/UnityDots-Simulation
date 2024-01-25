@@ -1,0 +1,24 @@
+{
+    "name": "Pinwheel.Polaris.Editor",
+    "references": [
+        "GUID:9c184a1e5cc20654384071dfebc106ed",
+        "GUID:4bdfb2239705740718731d0b4d54061d",
+        "GUID:90ab0119788ed4ec6b8fe54dd44f01fa",
+        "GUID:3b0fa64b5c28a7b4ea9661e340f57f9f",
+        "GUID:fb58d5396d4f85044a40c7548929c37d",
+        "GUID:07be42c48b6aa224e9b88d9bf39a72fa",
+        "GUID:3c5530d424e149a408de75ccb88ea4e3",
+        "GUID:f540dafdfbc0586439d98823585550d4"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Actors_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 9c592d2d4c7fc459f94a645873569195, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 87619184212434947
+    m_Localized: Ayud
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87619184212434946
+    m_Localized: Chef Comb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87619184212434945
+    m_Localized: Maqam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87619184212434944
+    m_Localized: Hamlet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87619184212434958
+    m_Localized: Groen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87619184212434957
+    m_Localized: Klipper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87619184212434956
+    m_Localized: Gluecose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87619184212434955
+    m_Localized: Isle of Yolk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87619184212434954
+    m_Localized: Truffleton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87619184212434953
+    m_Localized: Carmela
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87619184212434952
+    m_Localized: Gourmando
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87619184212434951
+    m_Localized: Nar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87619184212434950
+    m_Localized: Cerise
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87619184212434949
+    m_Localized: Felfel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87619184212434948
+    m_Localized: Terra
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

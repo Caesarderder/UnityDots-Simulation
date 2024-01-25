@@ -1,0 +1,17 @@
+{
+  "name": "com.acegikmo.shapes",
+  "displayName": "Shapes",
+  "version": "4.2.1",
+  "unity": "2019.4",
+  "description": "A real-time vector graphics library for Unity to draw Lines, Polylines, Discs, Arcs, Rectangles, Spheres, Tori, and other primitives both as easy-to-use components, and with an immediate-mode API for code-based procedural drawing. Shapes supports drawing both at runtime as well as for debugging purposes in OnDrawGizmos!\n\n\u2022 acegikmo.com/shapes\n\u2022 acegikmo@gmail.com\n\u2022 twitter.com/FreyaHolmer\n\u2022 discord.gg/aV62hk3\n\u2022 patreon.com/acegikmo\n\nMade possible by my wonderful supporters on Patreon!! \u2764",
+  "documentationUrl": "https://acegikmo.com/shapes/",
+  "dependencies": {
+    "com.unity.textmeshpro": "2.1.6"
+  },
+  "author": {
+    "name": "Freya Holm\u00e9r",
+    "email": "acegikmo@gmail.com",
+    "url": "https://acegikmo.com/"
+  },
+  "type": "library"
+}

@@ -1,0 +1,35 @@
+{
+    "name": "Rukhanka.Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:01e5f7c036964124aa192bf5e2d021ba",
+        "GUID:69653bcfe095d1841bfa14a815f86dad",
+        "GUID:3bd69b8470189e543a7984590f770554",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:734d92eba21c94caba915361bd5ac177",
+        "GUID:e0cd26848372d4e5c891c569017e11f1",
+        "GUID:d8b63aba1907145bea998dd612889d6b",
+        "GUID:c0dd0d10738d4ad4a9de57c559d0ca1b",
+        "GUID:2665a8d13d1b3f18800f46e256720795"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.test-framework.performance",
+            "expression": "3.0.0-pre.2",
+            "define": "RUKHANKA_WITH_TEST_PERFORMANCE"
+        }
+    ],
+    "noEngineReferences": false
+}

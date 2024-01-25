@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e8fda743b539a043b220ae6e99779c2, type: 3}
+  m_Name: RiverDeltaTrees
+  m_EditorClassIdentifier: 
+  prototypes:
+  - prefab: {fileID: 5127074640302750214, guid: 46840f8810e5e934e92b3611970381f6,
+      type: 3}
+    sharedMesh: {fileID: 4300010, guid: 0f4df284e59e6864b827cf920bcde2eb, type: 3}
+    sharedMaterials:
+    - {fileID: 2100000, guid: 918c39926d6ac6b459c226df83376a98, type: 2}
+    shadowCastingMode: 1
+    receiveShadow: 1
+    billboardShadowCastingMode: 0
+    billboardReceiveShadow: 0
+    layer: 0
+    keepPrefabLayer: 0
+    billboard: {fileID: 22600000, guid: 17bb9b3f937d3d14088cfe1fa195d294, type: 2}
+    hasCollider: 1
+    colliderInfo:
+      center: {x: 0.112780064, y: 2.4024792, z: 0.05915284}
+      radius: 0.5
+      height: 4.9748554
+      direction: 1
+    pivotOffset: 0
+    baseRotation: {x: 0, y: 0, z: 0, w: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    editor_PrefabAssetPath: Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly
+      Terrain Engine/Samples/Pinwheel Studio/Prefabs/Pine_01.prefab
+  - prefab: {fileID: 3018262670833896881, guid: 0c38cfea44e4e9c469223159012ec53f,
+      type: 3}
+    sharedMesh: {fileID: 4300022, guid: 0f4df284e59e6864b827cf920bcde2eb, type: 3}
+    sharedMaterials:
+    - {fileID: 2100000, guid: 918c39926d6ac6b459c226df83376a98, type: 2}
+    shadowCastingMode: 1
+    receiveShadow: 1
+    billboardShadowCastingMode: 0
+    billboardReceiveShadow: 0
+    layer: 0
+    keepPrefabLayer: 0
+    billboard: {fileID: 22600000, guid: 3d59e5a51238aca45b4a7a472ffaa967, type: 2}
+    hasCollider: 1
+    colliderInfo:
+      center: {x: 0.22673652, y: 2.1605086, z: -0.0965108}
+      radius: 0.35
+      height: 4.7559843
+      direction: 1
+    pivotOffset: 0
+    baseRotation: {x: 0, y: 0, z: 0, w: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    editor_PrefabAssetPath: Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly
+      Terrain Engine/Samples/Pinwheel Studio/Prefabs/Dead.prefab
+  - prefab: {fileID: 426123789145460816, guid: 6162978843b812645b55d91aa94ded4c, type: 3}
+    sharedMesh: {fileID: 4300004, guid: 0f4df284e59e6864b827cf920bcde2eb, type: 3}
+    sharedMaterials:
+    - {fileID: 2100000, guid: 918c39926d6ac6b459c226df83376a98, type: 2}
+    shadowCastingMode: 1
+    receiveShadow: 1
+    billboardShadowCastingMode: 0
+    billboardReceiveShadow: 0
+    layer: 0
+    keepPrefabLayer: 0
+    billboard: {fileID: 22600000, guid: caa06c54944faae4f838a1c020b5ee7e, type: 2}
+    hasCollider: 1
+    colliderInfo:
+      center: {x: 0.19807994, y: 2.7617157, z: -0.057520926}
+      radius: 0.5
+      height: 6.1754727
+      direction: 1
+    pivotOffset: 0
+    baseRotation: {x: 0, y: 0, z: 0, w: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    editor_PrefabAssetPath: Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly
+      Terrain Engine/Samples/Pinwheel Studio/Prefabs/Pine_00.prefab
+  - prefab: {fileID: 2902002091403816401, guid: a9f70ca3f0b87524699bd1d985191322,
+      type: 3}
+    sharedMesh: {fileID: 4300024, guid: 0f4df284e59e6864b827cf920bcde2eb, type: 3}
+    sharedMaterials:
+    - {fileID: 2100000, guid: 918c39926d6ac6b459c226df83376a98, type: 2}
+    shadowCastingMode: 1
+    receiveShadow: 1
+    billboardShadowCastingMode: 0
+    billboardReceiveShadow: 0
+    layer: 0
+    keepPrefabLayer: 0
+    billboard: {fileID: 0}
+    hasCollider: 1
+    colliderInfo:
+      center: {x: -1.33, y: 0.43, z: 0}
+      radius: 0.52
+      height: 3.45
+      direction: 0
+    pivotOffset: 0
+    baseRotation: {x: 0, y: 0, z: 0, w: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    editor_PrefabAssetPath: Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly
+      Terrain Engine/Samples/Pinwheel Studio/Prefabs/Dead_Break.prefab

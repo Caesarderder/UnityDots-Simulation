@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b712840779f4647baae93e0b9355d2, type: 3}
+  m_Name: SampleRocks
+  m_EditorClassIdentifier: 
+  prototypes:
+  - {fileID: 1205254296907068, guid: 2b48895e6ddc0e4409b245952f9896d4, type: 3}
+  - {fileID: 1716280037582520, guid: 7193ffee25d9e0145bd111d59ed99356, type: 3}
+  - {fileID: 1406009099456752, guid: b0d744330c6776943844b07ecd94eb1f, type: 3}
+  - {fileID: 1523950091251354, guid: ebd70366c46843d4eb94412901f7ba92, type: 3}
+  editor_PrefabAssetPaths:
+  - Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel
+    Studio/Prefabs/Rock.prefab
+  - Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel
+    Studio/Prefabs/Rock1.prefab
+  - Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel
+    Studio/Prefabs/Rock2.prefab
+  - Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Samples/Pinwheel
+    Studio/Prefabs/Rock3.prefab
+  isSampleAsset: 1

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d45d2105d9d547a409eaba349307cb1b, type: 3}
+  m_Name: Shapes UI Assets
+  m_EditorClassIdentifier: 
+  discIconSolid: {fileID: 2800000, guid: b745a4a8241f4764aa67b72501e98912, type: 3}
+  discIconPie: {fileID: 2800000, guid: 872733fb97ae56246a09de9cdf903ddc, type: 3}
+  discIconHollow: {fileID: 2800000, guid: 6b3256ff704681e49a7f7f10aa3ddf10, type: 3}
+  discIconArc: {fileID: 2800000, guid: c7294814801bce945a004dfebbace532, type: 3}
+  lineCapNone: {fileID: 2800000, guid: d61aa34750235414899d8fd087d2fe71, type: 3}
+  lineCapSquare: {fileID: 2800000, guid: d643f146eb7927a4a91006568881f000, type: 3}
+  lineCapRound: {fileID: 2800000, guid: adc35c618cd2d3941b89d4f15fe56951, type: 3}
+  lineDashStyleBasic: {fileID: 2800000, guid: 8729dac4c0609724eba1ce1a09d4b225, type: 3}
+  lineDashStyleAngled: {fileID: 2800000, guid: ce667c5f0bb6dba4d89415fe762f4b0a, type: 3}
+  lineDashStyleRound: {fileID: 2800000, guid: 9cac70955429807479ec8799d52a5e71, type: 3}
+  rectIconHardSolid: {fileID: 2800000, guid: 427dff9982ea9a24eb3fe275d70427f5, type: 3}
+  rectIconHardHollow: {fileID: 2800000, guid: a6561d023b0f85a40bcfc164c6a11e26, type: 3}
+  rectIconRoundedSolid: {fileID: 2800000, guid: c2519caa63dd2f7478652f5b751351f7,
+    type: 3}
+  rectIconRoundedHollow: {fileID: 2800000, guid: d00436d75387777488bd738362d5d5c4,
+    type: 3}
+  pointEditAdd: {fileID: 2800000, guid: dfda06ee273272b4dbb4087271ffd6e0, type: 3}
+  pointEditRemove: {fileID: 2800000, guid: 7d701d630a3edb44d907f8dd435ebd2c, type: 3}
+  pointEditColor: {fileID: 2800000, guid: d17de339a1c9f2d458e51bbcf1166eca, type: 3}
+  regularPolygonIcons:
+  - {fileID: 2800000, guid: 4bc0e19dc1c6a774098a48fd3073475a, type: 3}
+  - {fileID: 2800000, guid: 7c056b8105c779e4b85068cf08d58ec1, type: 3}
+  - {fileID: 2800000, guid: 99990dcab8f80bc4fbbad6886fc9eabd, type: 3}
+  - {fileID: 2800000, guid: e1a791e6d700f1e4c99cddf9beb2aaa3, type: 3}
+  - {fileID: 2800000, guid: 5abf57c461e786a4ab8e5357ff84cfdd, type: 3}
+  birpDefaultShader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  sampleMaterials:
+  - {fileID: 2100000, guid: b1a2efc8b1c9e4943a0973eff5b13bce, type: 2}
+  - {fileID: 2100000, guid: 5c3be74818acb8c45bd63a956d653ba3, type: 2}

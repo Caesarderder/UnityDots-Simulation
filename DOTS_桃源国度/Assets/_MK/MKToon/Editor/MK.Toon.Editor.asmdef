@@ -1,0 +1,29 @@
+{
+    "name": "MK.Toon.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b71ef49f2d068b249b45a8d04b7b3daa",
+        "GUID:15fc0a57446b3144c949da3e2b9737a9",
+        "GUID:c579267770062bf448e75eb160330b7f",
+        "GUID:3b7ae75084016884f996e1efce11279f"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [
+        ""
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.render-pipelines.universal",
+            "expression": "0",
+            "define": "MK_URP"
+        }
+    ],
+    "noEngineReferences": false
+}

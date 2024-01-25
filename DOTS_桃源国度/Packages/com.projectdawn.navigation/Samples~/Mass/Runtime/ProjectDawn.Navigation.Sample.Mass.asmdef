@@ -1,0 +1,20 @@
+{
+    "name": "ProjectDawn.Navigation.Sample.Mass",
+    "rootNamespace": "",
+    "references": [
+        "GUID:734d92eba21c94caba915361bd5ac177",
+        "GUID:d8b63aba1907145bea998dd612889d6b",
+        "GUID:e0cd26848372d4e5c891c569017e11f1",
+        "GUID:281035993b2885f4495941ff85a690fa",
+        "GUID:94c12171f11916942b3be5d93e29681e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

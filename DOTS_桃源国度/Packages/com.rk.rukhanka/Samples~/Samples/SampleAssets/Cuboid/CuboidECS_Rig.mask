@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CuboidECS_Rig
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Root
+    m_Weight: 1
+  - m_Path: Root/Cube
+    m_Weight: 0
+  - m_Path: Root/Cube (1)
+    m_Weight: 0
+  - m_Path: Root/Cube (2)
+    m_Weight: 0
+  - m_Path: Root/Cube (3)
+    m_Weight: 0
+  - m_Path: Root/Cube (4)
+    m_Weight: 0
+  - m_Path: Root/B1
+    m_Weight: 1
+  - m_Path: Root/B1/Cube (5)
+    m_Weight: 0
+  - m_Path: Root/B1/Cube (6)
+    m_Weight: 0
+  - m_Path: Root/B1/Cube (7)
+    m_Weight: 0
+  - m_Path: Root/B1/B2
+    m_Weight: 1
+  - m_Path: Root/B1/B2/Cube (8)
+    m_Weight: 0

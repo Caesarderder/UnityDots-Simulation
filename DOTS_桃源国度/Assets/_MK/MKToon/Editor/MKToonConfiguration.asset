@@ -1,0 +1,340 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 759d8d920edd46848987d64322829813, type: 3}
+  m_Name: MKToonConfiguration
+  m_EditorClassIdentifier: 
+  _renderPipeline: 1
+  showInstallerOnReload: 0
+  disablePerObjectOutlinesWarning: 0
+  _titleImage: {fileID: 2800000, guid: 9d278674ef7e65f47ac4deae7aea6c95, type: 3}
+  _readMe: {fileID: 102900000, guid: 13ebf3083b485cd4992f26eef6b4c903, type: 3}
+  _basePackageBuiltin: {fileID: 102900000, guid: feb819dbe0310c5489ab8aa2b2243132,
+    type: 3}
+  _basePackageURP: {fileID: 102900000, guid: 32efef04d3330df48bae4271babcc45b, type: 3}
+  _examplesPackageInc: {fileID: 102900000, guid: 783dfb7493ba3be4ba9a65c626ec2b00,
+    type: 3}
+  _examplesPackageBuiltin: {fileID: 102900000, guid: bda7aefb5fedd2d49be1274e3cb409e7,
+    type: 3}
+  _examplesPackageURP: {fileID: 102900000, guid: a258dff0e58b3a147b1f5e9f6a4ee278,
+    type: 3}
+  _examplesPackageURP_2023_2_Or_Newer: {fileID: 102900000, guid: 7406a6a019b944441be881f5b3b25dfb,
+    type: 3}
+  _examplesPackageBuiltin_2023_2_Or_Newer: {fileID: 102900000, guid: 4dd9807ed86cb394da16a3091f7243b8,
+    type: 3}
+  _examples:
+  - name: Artistic
+    scene: {fileID: 102900000, guid: 330667252edb66142bb436baab455037, type: 3}
+    icon: {fileID: 2800000, guid: 6dc4cae7b0dbd404899c80e4105343ce, type: 3}
+  - name: FlyingIsles
+    scene: {fileID: 102900000, guid: a9f9668609edb0a4b8b7283cf89e80f4, type: 3}
+    icon: {fileID: 2800000, guid: e3c4b1c4881f7e847b5dea8b0e62807b, type: 3}
+  - name: Outlines
+    scene: {fileID: 102900000, guid: 92b68c185c4656f42892d46ca83dd3f9, type: 3}
+    icon: {fileID: 2800000, guid: 22476a6325e7ba94ca3914b85b2099f3, type: 3}
+  - name: Spectate
+    scene: {fileID: 102900000, guid: 0e42f82bab71ce449ac5b17192ec689b, type: 3}
+    icon: {fileID: 2800000, guid: dc4f36fb4c92c3244aecdd4dfe2021ef, type: 3}
+  - name: WitchLab
+    scene: {fileID: 102900000, guid: 072523c5b35fc0240ba18b9f8f6060e0, type: 3}
+    icon: {fileID: 2800000, guid: 829ba09e0fb978741ab9ad0f0d213b52, type: 3}
+  - name: Playroom
+    scene: {fileID: 102900000, guid: e9a485432dc7bac4987976f00551ada7, type: 3}
+    icon: {fileID: 2800000, guid: cf7bb9e3e61399946aada46ababf1548, type: 3}
+  - name: Outlines2
+    scene: {fileID: 102900000, guid: f5a0405778f4753419cd08e017e5f291, type: 3}
+    icon: {fileID: 2800000, guid: e2dfd5cdddd004b4bada90c01c59083f, type: 3}
+  - name: SFX
+    scene: {fileID: 102900000, guid: b9b10b628aaf81343afb5a7d7d673cdc, type: 3}
+    icon: {fileID: 2800000, guid: 7e46251226bc19e46989b46f85fff668, type: 3}
+  - name: Sheep
+    scene: {fileID: 102900000, guid: e0a6abeb7a4bd1e4cb9c1d3f72b93485, type: 3}
+    icon: {fileID: 2800000, guid: 88915596caf2444409924bd6003107b5, type: 3}
+  - name: LightingStyles
+    scene: {fileID: 102900000, guid: b55d3991e487ca34ca2d356c41a5358d, type: 3}
+    icon: {fileID: 2800000, guid: 089163c4a43ac6a478c932431e92ac2d, type: 3}
+  _globalShaderFeaturesFile: {fileID: 10900000, guid: 4adcc91e8e1fd924e9704ce4fcde0194,
+    type: 3}
+  _globalShaderFeatures:
+  - rid: 0
+  - rid: 1
+  - rid: 2
+  - rid: 3
+  - rid: 4
+  - rid: 5
+  - rid: 6
+  - rid: 7
+  - rid: 8
+  - rid: 9
+  - rid: 10
+  _globalShaderFeaturesTemp:
+  - rid: 7033329786067353600
+  - rid: 7033329786067353601
+  - rid: 7033329786067353602
+  - rid: 7033329786067353603
+  - rid: 7033329786067353604
+  - rid: 7033329786067353605
+  - rid: 7033329786067353606
+  - rid: 7033329786067353607
+  - rid: 7033329786067353608
+  - rid: 7033329786067353609
+  - rid: 7033329786067353610
+  references:
+    version: 2
+    RefIds:
+    - rid: 0
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_COMBINE_VERTEX_COLOR_WITH_ALBEDO_MAP_OFF
+        - MK_COMBINE_VERTEX_COLOR_WITH_ALBEDO_MAP
+        _compileDirectives: []
+        _name: Multiply vertex color with albedo
+        _tooltip: Multiplies vertex color into the albedo Color.
+    - rid: 1
+      type: {class: GlobalShaderFeatureOutlineFading, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_OUTLINE_FADING_OFF
+        - MK_OUTLINE_FADING_LINEAR
+        - MK_OUTLINE_FADING_EXPONENTIAL
+        - MK_OUTLINE_FADING_INVERSE_EXPONENTIAL
+        _compileDirectives:
+        - MK_NULL
+        - MK_TOON_OUTLINE_FADING_LINEAR
+        - MK_TOON_OUTLINE_FADING_EXPONENTIAL
+        - MK_TOON_OUTLINE_FADING_INVERSE_EXPONENTIAL
+        _name: Outline Distance Fading
+        _tooltip: Enable outline distance based fading.
+    - rid: 2
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_POINT_FILTERING_OFF
+        - MK_POINT_FILTERING
+        _compileDirectives: []
+        _name: Force Point Filtering
+        _tooltip: Forces point filtering on textures.
+    - rid: 3
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_DISSOLVE_PROJECTION_SCREEN_SPACE_OFF
+        - MK_DISSOLVE_PROJECTION_SCREEN_SPACE
+        _compileDirectives: []
+        _name: Dissolve Projection Screen Space
+        _tooltip: Forces dissolve projection into screen space.
+    - rid: 4
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 1
+        _identifiers:
+        - MK_LOCAL_ANTIALIASING_OFF
+        - MK_LOCAL_ANTIALIASING
+        _compileDirectives: []
+        _name: Enable Local Antialiasing
+        _tooltip: Enables local antialiasing except for mobile devices.
+    - rid: 5
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_STYLIZE_SYSTEM_SHADOWS_OFF
+        - MK_STYLIZE_SYSTEM_SHADOWS
+        _compileDirectives: []
+        _name: Stylize System Shadows
+        _tooltip: Stylizes the system shadows like the lighting. Be careful with
+          the thresholds!
+    - rid: 6
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_LEGACY_NOISE_OFF
+        - MK_LEGACY_NOISE
+        _compileDirectives: []
+        _name: Legacy Noise
+        _tooltip: Enables the legacy noise calculation for animation and outline
+          noise.
+    - rid: 7
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_REGULAR_SCREEN_SPACE_OFF
+        - MK_REGULAR_SCREEN_SPACE
+        _compileDirectives: []
+        _name: Regular Screen Space UV
+        _tooltip: Enables the regular screen space uv for screen spaced effects instead
+          MK Toons customized screen space uv.
+    - rid: 8
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_LEGACY_SCREEN_SCALING_OFF
+        - MK_LEGACY_SCREEN_SCALING
+        _compileDirectives: []
+        _name: Legacy Screen Scaling
+        _tooltip: Enables legacy screen spaced scaling for artistic textures and
+          outlines in clip space.
+    - rid: 9
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_MULTI_PASS_STEREO_SCALING_OFF
+        - MK_MULTI_PASS_STEREO_SCALING
+        _compileDirectives: []
+        _name: Multi Pass Scaling
+        _tooltip: "Enables correct scaling for artistic textures and outlines in
+          clip space. \n\n This should only be enabled if your XR Render Mode is
+          set to \"Multi Pass\". \n\n This is required because there is no workaround
+          to detect the \"Multi Pass\" rendering mode, when using XR."
+    - rid: 10
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_LINEAR_lIGHT_DISTANCE_ATTENUATION_OFF
+        - MK_LINEAR_lIGHT_DISTANCE_ATTENUATION
+        _compileDirectives: []
+        _name: Linear Light Attenuation
+        _tooltip: Changes the light attenuation for non-directional lights more linear
+          (Approximately like builtin renderpipeline).
+    - rid: 7033329786067353600
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_COMBINE_VERTEX_COLOR_WITH_ALBEDO_MAP_OFF
+        - MK_COMBINE_VERTEX_COLOR_WITH_ALBEDO_MAP
+        _compileDirectives: []
+        _name: Multiply vertex color with albedo
+        _tooltip: Multiplies vertex color into the albedo Color.
+    - rid: 7033329786067353601
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_OUTLINE_FADING_OFF
+        - MK_OUTLINE_FADING_LINEAR
+        - MK_OUTLINE_FADING_EXPONENTIAL
+        - MK_OUTLINE_FADING_INVERSE_EXPONENTIAL
+        _compileDirectives:
+        - MK_NULL
+        - MK_TOON_OUTLINE_FADING_LINEAR
+        - MK_TOON_OUTLINE_FADING_EXPONENTIAL
+        - MK_TOON_OUTLINE_FADING_INVERSE_EXPONENTIAL
+        _name: Outline Distance Fading
+        _tooltip: Enable outline distance based fading.
+    - rid: 7033329786067353602
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_POINT_FILTERING_OFF
+        - MK_POINT_FILTERING
+        _compileDirectives: []
+        _name: Force Point Filtering
+        _tooltip: Forces point filtering on textures.
+    - rid: 7033329786067353603
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_DISSOLVE_PROJECTION_SCREEN_SPACE_OFF
+        - MK_DISSOLVE_PROJECTION_SCREEN_SPACE
+        _compileDirectives: []
+        _name: Dissolve Projection Screen Space
+        _tooltip: Forces dissolve projection into screen space.
+    - rid: 7033329786067353604
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 1
+        _identifiers:
+        - MK_LOCAL_ANTIALIASING_OFF
+        - MK_LOCAL_ANTIALIASING
+        _compileDirectives: []
+        _name: Enable Local Antialiasing
+        _tooltip: Enables local antialiasing except for mobile devices.
+    - rid: 7033329786067353605
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_STYLIZE_SYSTEM_SHADOWS_OFF
+        - MK_STYLIZE_SYSTEM_SHADOWS
+        _compileDirectives: []
+        _name: Stylize System Shadows
+        _tooltip: Stylizes the system shadows like the lighting. Be careful with
+          the thresholds!
+    - rid: 7033329786067353606
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_LEGACY_NOISE_OFF
+        - MK_LEGACY_NOISE
+        _compileDirectives: []
+        _name: Legacy Noise
+        _tooltip: Enables the legacy noise calculation for animation and outline
+          noise.
+    - rid: 7033329786067353607
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_REGULAR_SCREEN_SPACE_OFF
+        - MK_REGULAR_SCREEN_SPACE
+        _compileDirectives: []
+        _name: Regular Screen Space UV
+        _tooltip: Enables the regular screen space uv for screen spaced effects instead
+          MK Toons customized screen space uv.
+    - rid: 7033329786067353608
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_LEGACY_SCREEN_SCALING_OFF
+        - MK_LEGACY_SCREEN_SCALING
+        _compileDirectives: []
+        _name: Legacy Screen Scaling
+        _tooltip: Enables legacy screen spaced scaling for artistic textures and
+          outlines in clip space.
+    - rid: 7033329786067353609
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_MULTI_PASS_STEREO_SCALING_OFF
+        - MK_MULTI_PASS_STEREO_SCALING
+        _compileDirectives: []
+        _name: Multi Pass Scaling
+        _tooltip: "Enables correct scaling for artistic textures and outlines in
+          clip space. \n\n This should only be enabled if your XR Render Mode is
+          set to \"Multi Pass\". \n\n This is required because there is no workaround
+          to detect the \"Multi Pass\" rendering mode, when using XR."
+    - rid: 7033329786067353610
+      type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
+      data:
+        _mode: 0
+        _identifiers:
+        - MK_LINEAR_lIGHT_DISTANCE_ATTENUATION_OFF
+        - MK_LINEAR_lIGHT_DISTANCE_ATTENUATION
+        _compileDirectives: []
+        _name: Linear Light Attenuation
+        _tooltip: Changes the light attenuation for non-directional lights more linear
+          (Approximately like builtin renderpipeline).

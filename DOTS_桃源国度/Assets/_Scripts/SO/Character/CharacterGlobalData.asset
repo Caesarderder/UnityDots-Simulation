@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85386e349c52a944eaabf2a91193bc07, type: 3}
+  m_Name: CharacterGlobalData
+  m_EditorClassIdentifier: 
+  MoveSpeed: 0.6
+  RestTime: 3
+  MaxDuration: 50
+  CharacterPrefabs:
+  - ID: 100
+    Prefab: {fileID: 5520512931232389317, guid: 5a77bbc8454074a4b8d915ffad43f1df,
+      type: 3}
+  - ID: 200
+    Prefab: {fileID: 5520512931232389317, guid: 5a77bbc8454074a4b8d915ffad43f1df,
+      type: 3}
+  - ID: 300
+    Prefab: {fileID: 5520512931232389317, guid: 5a77bbc8454074a4b8d915ffad43f1df,
+      type: 3}
+  - ID: 400
+    Prefab: {fileID: 4142232204557876574, guid: c33705a0269d79448b2907e53eac3a81,
+      type: 3}

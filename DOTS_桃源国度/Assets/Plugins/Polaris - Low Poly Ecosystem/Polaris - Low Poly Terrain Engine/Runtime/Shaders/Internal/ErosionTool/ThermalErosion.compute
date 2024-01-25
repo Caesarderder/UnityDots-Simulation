@@ -1,0 +1,191 @@
+﻿#pragma kernel Simulate
+
+#include "ErosionToolCommon.cginc"
+
+RWTexture2D<float4> _SimulationData;
+RWTexture2D<float4> _SoilVHData;
+RWTexture2D<float4> _SoilDiagData;
+
+RWTexture2D<float2> _ErosionMap;
+
+float3 _Bounds;
+float _ErosionRate;
+float _RestingAngle;
+
+Texture2D<float4> _MaskMap;
+float2 _MaskMapResolution;
+
+void Outflow(inout float4 srcData, inout uint3 id, float erosionMask)
+{
+	float F_CONST = DT * G * _ErosionRate * 0.5;
+	float3 centerPos = float3(id.x, srcData.r, id.z);
+	float3 downVector = float3(0, -1, 0);
+	float3 direction;
+	float angleFactor;
+	float minFactor = sin(radians(_RestingAngle));
+	float maxDh = -10000;
+
+	float3 leftPos = float3(id.x - 1, 0, id.z);
+	float4 leftData = _SimulationData[leftPos.xz];
+	leftPos.y = leftData.r;
+	direction = normalize(leftPos - centerPos);
+	angleFactor = saturate(dot(direction, downVector));
+	angleFactor = saturate(InverseLerpUnclamped(minFactor, 1, angleFactor));
+	float deltaHeightL = srcData.r - leftData.r;
+	maxDh = max(maxDh, deltaHeightL);
+	float fL = max(0, F_CONST * angleFactor * deltaHeightL) * (leftPos.x >= 0);
+
+	float3 topPos = float3(id.x, 0, id.z + 1);
+	float4 topData = _SimulationData[topPos.xz];
+	topPos.y = topData.r;
+	direction = normalize(topPos - centerPos);
+	angleFactor = saturate(dot(direction, downVector));
+	angleFactor = saturate(InverseLerpUnclamped(minFactor, 1, angleFactor));
+	float deltaHeightT = srcData.r - topData.r;
+	maxDh = max(maxDh, deltaHeightT);
+	float fT = max(0, F_CONST * angleFactor * deltaHeightT) * (topPos.y < _Bounds.z);
+
+	float3 rightPos = float3(id.x + 1, 0, id.z);
+	float4 rightData = _SimulationData[rightPos.xz];
+	rightPos.y = rightData.r;
+	direction = normalize(rightPos - centerPos);
+	angleFactor = saturate(dot(direction, downVector));
+	angleFactor = saturate(InverseLerpUnclamped(minFactor, 1, angleFactor));
+	float deltaHeightR = srcData.r - rightData.r;
+	maxDh = max(maxDh, deltaHeightR);
+	float fR = max(0, F_CONST * angleFactor * deltaHeightR) * (rightPos.x < _Bounds.x);
+
+	float3 bottomPos = float3(id.x, 0, id.z - 1);
+	float4 bottomData = _SimulationData[bottomPos.xz];
+	bottomPos.y = bottomData.r;
+	direction = normalize(bottomPos - centerPos);
+	angleFactor = saturate(dot(direction, downVector));
+	angleFactor = saturate(InverseLerpUnclamped(minFactor, 1, angleFactor));
+	float deltaHeightB = srcData.r - bottomData.r;
+	maxDh = max(maxDh, deltaHeightB);
+	float fB = max(0, F_CONST * angleFactor * deltaHeightB) * (bottomPos.y >= 0);
+
+	//---
+	float3 leftTopPos = float3(id.x - 1, 0, id.z + 1);
+	float4 leftTopData = _SimulationData[leftTopPos.xz];
+	leftTopPos.y = leftTopData.r;
+	direction = normalize(leftTopPos - centerPos);
+	angleFactor = saturate(dot(direction, downVector));
+	angleFactor = saturate(InverseLerpUnclamped(minFactor, 1, angleFactor));
+	float deltaHeightLT = srcData.r - leftTopData.r;
+	maxDh = max(maxDh, deltaHeightLT);
+	float fLT = max(0, F_CONST * angleFactor * deltaHeightLT) * (leftTopPos.x >= 0) * (leftTopPos.y < _Bounds.z);
+
+	float3 topRightPos = float3(id.x + 1, 0, id.z + 1);
+	float4 topRightData = _SimulationData[topRightPos.xz];
+	topRightPos.y = topRightData.r;
+	direction = normalize(topRightPos - centerPos);
+	angleFactor = saturate(dot(direction, downVector));
+	angleFactor = saturate(InverseLerpUnclamped(minFactor, 1, angleFactor));
+	float deltaHeightTR = srcData.r - topRightData.r;
+	maxDh = max(maxDh, deltaHeightTR);
+	float fTR = max(0, F_CONST * angleFactor * deltaHeightTR) * (topRightPos.x < _Bounds.x) * (topRightPos.y < _Bounds.z);
+
+	float3 rightBottomPos = float3(id.x + 1, 0, id.z - 1);
+	float4 rightBottomData = _SimulationData[rightBottomPos.xz];
+	rightBottomPos.y = rightBottomData.r;
+	direction = normalize(rightBottomPos - centerPos);
+	angleFactor = saturate(dot(direction, downVector));
+	angleFactor = saturate(InverseLerpUnclamped(minFactor, 1, angleFactor));
+	float deltaHeightRB = srcData.r - rightBottomData.r;
+	maxDh = max(maxDh, deltaHeightRB);
+	float fRB = max(0, F_CONST * angleFactor * deltaHeightRB) * (rightBottomPos.x < _Bounds.x) * (rightBottomPos.y >= 0);
+
+	float3 bottomLeftPos = float3(id.x - 1, 0, id.z - 1);
+	float4 bottomLeftData = _SimulationData[bottomLeftPos.xz];
+	bottomLeftPos.y = bottomLeftData.r;
+	direction = normalize(bottomLeftPos - centerPos);
+	angleFactor = saturate(dot(direction, downVector));
+	angleFactor = saturate(InverseLerpUnclamped(minFactor, 1, angleFactor));
+	float deltaHeightBL = srcData.r - bottomLeftData.r;
+	maxDh = max(maxDh, deltaHeightBL);
+	float fBL = max(0, F_CONST * angleFactor * deltaHeightBL) * (bottomLeftPos.x >= 0) * (bottomLeftPos.y >= 0);
+
+	float fSum = fL + fT + fR + fB + fLT + fTR + fRB + fBL;
+	float fScale = erosionMask * min(1, maxDh / (fSum + 0.0001));
+	
+	float4 fVH = float4(fL, fT, fR, fB) * fScale;
+	_SoilVHData[id.xz] = fVH;
+
+	float4 fDiag = float4(fLT, fTR, fRB, fBL) * fScale;
+	_SoilDiagData[id.xz] = fDiag;
+
+	srcData.r = max(0, srcData.r - fSum * fScale);
+
+	float2 erosionMapData = _ErosionMap[id.xz];
+	erosionMapData.r += fSum * fScale;
+	//erosionMapData.g -= fSum * fScale;
+	_ErosionMap[id.xz] = erosionMapData;
+}
+
+void Inflow(inout float4 srcData, inout uint3 id)
+{
+	float3 leftPos = float3(id.x - 1, 0, id.z);
+	float4 leftData = _SoilVHData[leftPos.xz];
+	float fL = leftData[RIGHT];
+
+	float3 topPos = float3(id.x, 0, id.z + 1);
+	float4 topData = _SoilVHData[topPos.xz];
+	float fT = topData[BOTTOM];
+
+	float3 rightPos = float3(id.x + 1, 0, id.z);
+	float4 rightData = _SoilVHData[rightPos.xz];
+	float fR = rightData[LEFT];
+
+	float3 bottomPos = float3(id.x, 0, id.z - 1);
+	float4 bottomData = _SoilVHData[bottomPos.xz];
+	float fB = bottomData[TOP];
+
+	float3 leftTopPos = float3(id.x - 1, 0, id.z + 1);
+	float4 leftTopData = _SoilDiagData[leftTopPos.xz];
+	float fLT = leftTopData[RIGHT_BOTTOM];
+
+	float3 topRightPos = float3(id.x + 1, 0, id.z + 1);
+	float4 topRightData = _SoilDiagData[topRightPos.xz];
+	float fTR = topRightData[BOTTOM_LEFT];
+
+	float3 rightBottomPos = float3(id.x + 1, 0, id.z - 1);
+	float4 rightBottomData = _SoilDiagData[rightBottomPos.xz];
+	float fRB = rightBottomData[LEFT_TOP];
+
+	float3 bottomLeftPos = float3(id.x - 1, 0, id.z - 1);
+	float4 bottomLeftData = _SoilDiagData[bottomLeftPos.xz];
+	float fBL = bottomLeftData[TOP_RIGHT];
+
+	float fSum = fL + fT + fR + fB + fLT + fTR + fRB + fBL;
+	srcData.r += fSum;
+
+	float2 erosionMapData = _ErosionMap[id.xz];
+	erosionMapData.r -= fSum;
+	erosionMapData.g += fSum;
+
+	erosionMapData.r = max(0, erosionMapData.r);
+	erosionMapData.g = max(0, erosionMapData.g);
+
+	_ErosionMap[id.xz] = erosionMapData;
+}
+
+void UpdateSimData(inout float4 srcData, inout uint3 id)
+{
+	//srcData.b = srcData.r;
+	_SimulationData[id.xz] = srcData;
+}
+
+[numthreads(8, 1, 8)]
+void Simulate(uint3 id: SV_DISPATCHTHREADID)
+{
+	float2 uv = id.xz / _Bounds.xz;
+	float4 mask = SampleTextureBilinear(_MaskMap, _MaskMapResolution.x, _MaskMapResolution.y, uv);
+	float4 srcData = _SimulationData[id.xz];
+
+	Outflow(srcData, id, mask.a);
+	UpdateSimData(srcData, id);
+	GroupMemoryBarrierWithGroupSync();
+	Inflow(srcData, id);
+	UpdateSimData(srcData, id);
+}

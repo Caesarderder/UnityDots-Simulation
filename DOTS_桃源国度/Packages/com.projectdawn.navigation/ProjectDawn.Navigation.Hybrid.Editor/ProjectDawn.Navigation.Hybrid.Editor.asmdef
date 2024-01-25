@@ -1,0 +1,26 @@
+{
+    "name": "ProjectDawn.Navigation.Hybrid.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:734d92eba21c94caba915361bd5ac177",
+        "GUID:c38fb62397af04c51b143415e1db6d90",
+        "GUID:e0cd26848372d4e5c891c569017e11f1",
+        "GUID:d8b63aba1907145bea998dd612889d6b",
+        "GUID:86c9d8e67265f41469be06142c397d17",
+        "GUID:281035993b2885f4495941ff85a690fa",
+        "GUID:94c12171f11916942b3be5d93e29681e",
+        "GUID:e04f36f8ebcfe3a47ba17ac95c464409",
+        "GUID:6fcc1e56e4cd54a418e00fc005c4c296"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,24 @@
+{
+    "name": "com.rk.rukhanka",
+    "version": "1.4.2",
+    "displayName": "Rukhanka Animation System",
+    "description": "ECS Animation System",
+    "unity": "2022.3",
+    "unityRelease": "0f1",
+    "dependencies": {
+        "com.unity.entities.graphics": "1.0.16"
+    },
+    "author": {
+        "name": "Rukhanka",
+        "email": "support@rukhanka.com",
+        "url": "https://docs.rukhanka.com"
+    },
+    "documentationUrl": "https://docs.rukhanka.com",
+    "samples": [
+        {
+            "displayName": "Rukhanka Animation Samples",
+            "description": "Contains sample scenes that show various features of Rukhanka Animation System",
+            "path": "Samples~/Samples"
+        }
+    ]
+}

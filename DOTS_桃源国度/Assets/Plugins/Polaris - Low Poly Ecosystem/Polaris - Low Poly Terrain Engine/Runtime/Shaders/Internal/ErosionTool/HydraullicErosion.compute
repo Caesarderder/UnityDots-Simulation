@@ -1,0 +1,291 @@
+﻿#pragma kernel Simulate
+
+#include "ErosionToolCommon.cginc"
+
+float3 _Bounds;
+
+RWTexture2D<float4> _SimulationData; //r: current height, g: suspended sediment, b: last height, a: water level
+RWTexture2D<float4> _OutflowVHData;
+RWTexture2D<float4> _OutflowDiagData;
+RWTexture2D<float2> _VelocityData;
+
+RWTexture2D<float2> _ErosionMap;
+
+//RWTexture2D<float4> _VisualizeData;
+
+float _WaterSourceAmount;
+float _RainRate;
+float _FlowRate;
+float _ErosionRate;
+float _DepositionRate;
+float _EvaporationRate;
+
+Texture2D<float4> _MaskMap; //r: water source, g: rain, b: unused, a: erosion intensity
+float2 _MaskMapResolution;
+
+float2 _RandomSeed;
+
+
+float3 CalculateNormal(inout float4 srcData, inout uint3 id)
+{
+	float3 centerPos = float3(id.x, 0, id.z);
+	centerPos.y = srcData.r;
+
+	float3 leftPos = float3(id.x - 1, 0, id.z);
+	float3 topPos = float3(id.x, 0, id.z + 1);
+	float3 rightPos = float3(id.x + 1, 0, id.z);
+	float3 bottomPos = float3(id.x, 0, id.z - 1);
+	float3 leftTopPos = float3(id.x - 1, 0, id.z + 1);
+	float3 topRightPos = float3(id.x + 1, 0, id.z + 1);
+	float3 rightBottomPos = float3(id.x + 1, 0, id.z - 1);
+	float3 bottomLeftPos = float3(id.x - 1, 0, id.z - 1);
+
+	leftPos.y = _SimulationData[leftPos.xz].r;
+	topPos.y = _SimulationData[topPos.xz].r;
+	rightPos.y = _SimulationData[rightPos.xz].r;
+	bottomPos.y = _SimulationData[bottomPos.xz].r;
+	
+	leftTopPos.y = _SimulationData[leftTopPos.xz].r;
+	topRightPos.y = _SimulationData[topRightPos.xz].r;
+	rightBottomPos.y = _SimulationData[rightBottomPos.xz].r;
+	bottomLeftPos.y = _SimulationData[bottomLeftPos.xz].r;
+
+	float3 n0 = cross(leftPos - centerPos, leftTopPos - centerPos);
+	float3 n1 = cross(topPos - centerPos, topRightPos - centerPos);
+	float3 n2 = cross(rightPos - centerPos, rightBottomPos - centerPos);
+	float3 n3 = cross(bottomPos - centerPos, bottomLeftPos - centerPos);
+
+	float3 n4 = cross(leftTopPos - centerPos, topPos - centerPos);
+	float3 n5 = cross(topRightPos - centerPos, rightPos - centerPos);
+	float3 n6 = cross(rightBottomPos - centerPos, bottomPos - centerPos);
+	float3 n7 = cross(bottomLeftPos - centerPos, leftPos - centerPos);
+
+	float3 nc = (n0 + n1 + n2 + n3 + n4 + n5 + n6 + n7) / 8;
+	float3 normal = normalize(nc);
+
+	return normal;
+}
+
+void AddWaterSource(inout float4 srcData, float waterSourceMask)
+{
+	float water = _WaterSourceAmount * waterSourceMask * DT;
+	srcData.a += water;
+}
+
+void Rain(inout float4 srcData, float2 uv, float rainMask)
+{
+	float rand = RandomValue(uv + _RandomSeed);
+	float rainValue = rand < (_RainRate * rainMask);
+	srcData.a += rainValue * DT;
+}
+
+void Outflow(inout float4 srcData, inout uint3 id)
+{
+	float srcHeight = srcData.r + srcData.a;
+	float F_CONST = DT * G * FLOW_CONST * _FlowRate;
+
+	float3 leftPos = float3(id.x - 1, 0, id.z);
+	float4 leftData = _SimulationData[leftPos.xz];
+	float deltaHeightL = srcHeight - leftData.r - leftData.a;
+	float fL = max(0, F_CONST * deltaHeightL) * (leftPos.x >= 0);
+
+	float3 topPos = float3(id.x, 0, id.z + 1);
+	float4 topData = _SimulationData[topPos.xz];
+	float deltaHeightT = srcHeight - topData.r - topData.a;
+	float fT = max(0, F_CONST * deltaHeightT) * (topPos.y < _Bounds.z);
+
+	float3 rightPos = float3(id.x + 1, 0, id.z);
+	float4 rightData = _SimulationData[rightPos.xz];
+	float deltaHeightR = srcHeight - rightData.r - rightData.a;
+	float fR = max(0, F_CONST * deltaHeightR) * (rightPos.x < _Bounds.x);
+
+	float3 bottomPos = float3(id.x, 0, id.z - 1);
+	float4 bottomData = _SimulationData[bottomPos.xz];
+	float deltaHeightB = srcHeight - bottomData.r - bottomData.a;
+	float fB = max(0, F_CONST * deltaHeightB) * (bottomPos.y >= 0);
+
+	float3 leftTopPos = float3(id.x - 1, 0, id.z + 1);
+	float4 leftTopData = _SimulationData[leftTopPos.xz];
+	float deltaHeightLT = srcHeight - leftTopData.r - leftTopData.a;
+	float fLT = max(0, F_CONST * deltaHeightLT) * (leftTopPos.x >= 0) * (leftTopPos.y < _Bounds.z);
+
+	float3 topRightPos = float3(id.x + 1, 0, id.z + 1);
+	float4 topRightData = _SimulationData[topRightPos.xz];
+	float deltaHeightTR = srcHeight - topRightData.r - topRightData.a;
+	float fTR = max(0, F_CONST * deltaHeightTR) * (topRightPos.x < _Bounds.x) * (topRightPos.y < _Bounds.z);
+
+	float3 rightBottomPos = float3(id.x + 1, 0, id.z - 1);
+	float4 rightBottomData = _SimulationData[rightBottomPos.xz];
+	float deltaHeightRB = srcHeight - rightBottomData.r - rightBottomData.a;
+	float fRB = max(0, F_CONST * deltaHeightRB) * (rightBottomPos.x < _Bounds.x) * (rightBottomPos.y >= 0);
+
+	float3 bottomLeftPos = float3(id.x - 1, 0, id.z - 1);
+	float4 bottomLeftData = _SimulationData[bottomLeftPos.xz];
+	float deltaHeightBL = srcHeight - bottomLeftData.r - bottomLeftData.a;
+	float fBL = max(0, F_CONST * deltaHeightBL) * (bottomLeftPos.x >= 0) * (bottomLeftPos.y >= 0);
+
+	float fSum = fL + fT + fR + fB + fLT + fTR + fRB + fBL;
+
+	float fScale = min(1, srcData.a / (fSum + 0.0001));
+	float4 fVH = float4(fL, fT, fR, fB) * fScale;
+	_OutflowVHData[id.xz] = fVH;
+
+	float4 fDiag = float4(fLT, fTR, fRB, fBL) * fScale;
+	_OutflowDiagData[id.xz] = fDiag;
+	srcData.a -= fSum * fScale;
+}
+
+void Inflow(inout float4 srcData, inout uint3 id)
+{
+	float3 leftPos = float3(id.x - 1, 0, id.z);
+	float4 leftData = _OutflowVHData[leftPos.xz];
+	float fL = leftData[RIGHT];
+
+	float3 topPos = float3(id.x, 0, id.z + 1);
+	float4 topData = _OutflowVHData[topPos.xz];
+	float fT = topData[BOTTOM];
+
+	float3 rightPos = float3(id.x + 1, 0, id.z);
+	float4 rightData = _OutflowVHData[rightPos.xz];
+	float fR = rightData[LEFT];
+
+	float3 bottomPos = float3(id.x, 0, id.z - 1);
+	float4 bottomData = _OutflowVHData[bottomPos.xz];
+	float fB = bottomData[TOP];
+
+	float3 leftTopPos = float3(id.x - 1, 0, id.z + 1);
+	float4 leftTopData = _OutflowDiagData[leftTopPos.xz];
+	float fLT = leftTopData[RIGHT_BOTTOM];
+
+	float3 topRightPos = float3(id.x + 1, 0, id.z + 1);
+	float4 topRightData = _OutflowDiagData[topRightPos.xz];
+	float fTR = topRightData[BOTTOM_LEFT];
+
+	float3 rightBottomPos = float3(id.x + 1, 0, id.z - 1);
+	float4 rightBottomData = _OutflowDiagData[rightBottomPos.xz];
+	float fRB = rightBottomData[LEFT_TOP];
+
+	float3 bottomLeftPos = float3(id.x - 1, 0, id.z - 1);
+	float4 bottomLeftData = _OutflowDiagData[bottomLeftPos.xz];
+	float fBL = bottomLeftData[TOP_RIGHT];
+
+	float fSum = fL + fT + fR + fB + fLT + fTR + fRB + fBL;
+	srcData.a += fSum;
+}
+
+void UpdateVelocity(inout uint3 id)
+{
+	float3 leftPos = float3(id.x - 1, 0, id.z);
+	float3 topPos = float3(id.x, 0, id.z + 1);
+	float3 rightPos = float3(id.x + 1, 0, id.z);
+	float3 bottomPos = float3(id.x, 0, id.z - 1);
+	
+	float4 leftOutflow = _OutflowVHData[leftPos.xz];
+	float4 topOutflow = _OutflowVHData[topPos.xz];
+	float4 rightOutflow = _OutflowVHData[rightPos.xz];
+	float4 bottomOutflow = _OutflowVHData[bottomPos.xz];
+
+	float3 leftTopPos = float3(id.x - 1, 0, id.z + 1);
+	float3 topRightPos = float3(id.x + 1, 0, id.z + 1);
+	float3 rightBottomPos = float3(id.x + 1, 0, id.z - 1);
+	float3 bottomLeftPos = float3(id.x - 1, 0, id.z - 1);
+
+	float4 leftTopOutflow = _OutflowDiagData[leftTopPos.xz];
+	float4 topRightOutflow = _OutflowDiagData[topRightPos.xz];
+	float4 rightBottomOutflow = _OutflowDiagData[rightBottomPos.xz];
+	float4 bottomLeftOutflow = _OutflowDiagData[bottomLeftPos.xz];
+
+	float4 srcVHOutflow = _OutflowVHData[id.xz];
+
+	float4 srcDiagOutflow = _OutflowDiagData[id.xz];
+	float vX0 = leftTopOutflow[RIGHT_BOTTOM] + leftOutflow[RIGHT] + bottomLeftOutflow[TOP_RIGHT];
+	float vX1 = srcDiagOutflow[TOP_RIGHT] + srcVHOutflow[RIGHT] + srcDiagOutflow[RIGHT_BOTTOM];
+	float vX2 = srcDiagOutflow[LEFT_TOP] + srcVHOutflow[LEFT] + srcDiagOutflow[BOTTOM_LEFT];
+	float vX3 = topRightOutflow[BOTTOM_LEFT] + rightOutflow[LEFT] + rightBottomOutflow[LEFT_TOP];
+	float vX = vX0 + vX1 - vX2 - vX3;
+
+	float vY0 = bottomLeftOutflow[TOP_RIGHT] + bottomOutflow[TOP] + rightBottomOutflow[LEFT_TOP];
+	float vY1 = srcDiagOutflow[LEFT_TOP] + srcVHOutflow[TOP] + srcDiagOutflow[TOP_RIGHT];
+	float vY2 = srcDiagOutflow[BOTTOM_LEFT] + srcVHOutflow[BOTTOM] + srcDiagOutflow[RIGHT_BOTTOM];
+	float vY3 = leftTopOutflow[RIGHT_BOTTOM] + topOutflow[BOTTOM] + topRightOutflow[BOTTOM_LEFT];
+	float vY = vY0 + vY1 - vY2 - vY3;
+
+	float2 v = float2(vX, vY);
+	_VelocityData[id.xz] = v;
+}
+
+void ErosionAndDeposition(inout float4 srcData, inout uint3 id, float erosionMask)
+{
+	float2 velocity = _VelocityData[id.xz];
+	float3 surfaceNormal = CalculateNormal(srcData, id);
+
+	float2 nextPixel = float2(id.x + velocity.x, id.z + velocity.y);
+	float nextHeight = SampleTextureBilinear(_SimulationData, _Bounds.x, _Bounds.z, nextPixel).b;
+	float deltaHeight = max(0, srcData.r - nextHeight);
+	//float erosionFactor = pow(abs(1 - surfaceNormal.y), 1.0 / 10.0);
+	//erosionFactor = 1;
+	float erosionFactor = 1;
+	float erodedAmount = _ErosionRate * erosionMask * saturate(erosionFactor * length(velocity)) * DT;
+	erodedAmount = clamp(erodedAmount, 0, deltaHeight);
+	erodedAmount = clamp(erodedAmount, 0, srcData.r);
+	srcData.r -= erodedAmount;
+	srcData.g += erodedAmount;
+
+	float depositFactor = surfaceNormal.y;
+	float depositAmount = _DepositionRate * depositFactor * DT;
+	depositAmount = clamp(depositAmount, 0, srcData.g);
+	srcData.r += depositAmount;
+	srcData.g -= depositAmount;
+
+	float2 erosionMapData = _ErosionMap[id.xz];
+	erosionMapData.r = max(0, erosionMapData.r + erodedAmount);
+	erosionMapData.g = max(0, erosionMapData.g + depositAmount - erodedAmount);
+	_ErosionMap[id.xz] = erosionMapData;
+}
+
+void SedimentTransportation(inout float4 srcData, inout uint3 id)
+{
+	float2 velocity = _VelocityData[id.xz];
+	float2 pixelCoord = float2(id.x - velocity.x, id.z - velocity.y);
+	float sediment = SampleTextureBilinear(_SimulationData, _Bounds.x, _Bounds.z, pixelCoord).g;
+	srcData.g = sediment;
+}
+
+void Evaporate(inout float4 srcData)
+{
+	srcData.a = max(0, srcData.a - _EvaporationRate * DT);
+}
+
+void UpdateSimData(inout float4 srcData, inout uint3 id)
+{
+	srcData.b = srcData.r;
+	_SimulationData[id.xz] = srcData;
+}
+
+[numthreads(8, 1, 8)]
+void Simulate(uint3 id: SV_DISPATCHTHREADID)
+{
+	float2 uv = id.xz / _Bounds.xz;
+	float4 mask = SampleTextureBilinear(_MaskMap, _MaskMapResolution.x, _MaskMapResolution.y, uv);
+	float4 srcData = _SimulationData[id.xz];
+	
+	AddWaterSource(srcData, mask.r);
+	Rain(srcData, uv, mask.g);
+	UpdateSimData(srcData, id);
+	GroupMemoryBarrierWithGroupSync(); //Outflow read water data
+
+	Outflow(srcData, id);
+	GroupMemoryBarrierWithGroupSync(); //Inflow read outflow data
+
+	Inflow(srcData, id);
+	UpdateVelocity(id);
+	GroupMemoryBarrierWithGroupSync(); //Erosion read velocity data
+
+	ErosionAndDeposition(srcData, id, mask.a);
+	UpdateSimData(srcData, id);
+	GroupMemoryBarrierWithGroupSync(); //Sediment transport read source data
+
+	SedimentTransportation(srcData, id);
+	Evaporate(srcData);
+	UpdateSimData(srcData, id);
+}

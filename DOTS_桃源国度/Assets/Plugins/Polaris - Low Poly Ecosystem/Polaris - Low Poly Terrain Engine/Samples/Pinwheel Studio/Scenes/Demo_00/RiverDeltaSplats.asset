@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8838f9e3fa4281f48a9a64c787c84798, type: 3}
+  m_Name: RiverDeltaSplats
+  m_EditorClassIdentifier: 
+  prototypes:
+  - texture: {fileID: 2800000, guid: 0fb8c73ff20ed414fbb3b14b5850a734, type: 3}
+    normalMap: {fileID: 0}
+    tileSize: {x: 10, y: 10}
+    tileOffset: {x: 0, y: 0}
+    metallic: 0
+    smoothness: 0
+  - texture: {fileID: 2800000, guid: 83aa3f5d11f54604c87c4115e4353bbf, type: 3}
+    normalMap: {fileID: 0}
+    tileSize: {x: 10, y: 10}
+    tileOffset: {x: 0, y: 0}
+    metallic: 0
+    smoothness: 0
+  - texture: {fileID: 2800000, guid: f4a6c81d2197db442908356b04ff1564, type: 3}
+    normalMap: {fileID: 0}
+    tileSize: {x: 10, y: 10}
+    tileOffset: {x: 0, y: 0}
+    metallic: 0
+    smoothness: 0
+  - texture: {fileID: 2800000, guid: 72627668964b0ef4ca9fb9c656d9484d, type: 3}
+    normalMap: {fileID: 0}
+    tileSize: {x: 10, y: 10}
+    tileOffset: {x: 0, y: 0}
+    metallic: 0
+    smoothness: 0

@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Inventory Item Name_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 41b74adf4121a468e9dbe8958eb2f813, type: 2}
+  m_Metadata:
+    m_Items:
+    - id: 0
+  m_TableData:
+  - m_Id: 24397351017934848
+    m_Localized: Knife
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38495894931234816
+    m_Localized: Hammer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38496307243900928
+    m_Localized: Lemon
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 38497147220385792
+    m_Localized: Lobster
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 38507295636709376
+    m_Localized: Ginger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38508915711795200
+    m_Localized: Lemonade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40633530915479552
+    m_Localized: Hawaiian Pizza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58726583291076608
+    m_Localized: Slime critter's egg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58726583295270912
+    m_Localized: Lobster soup
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58726583295270913
+    m_Localized: Lobster soup
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68473605157519360
+    m_Localized: Rock critter's egg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75354930851733504
+    m_Localized: Seeds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75356002563514368
+    m_Localized: Sweet cream
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75359460435812352
+    m_Localized: Sweet Cream
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75396619091959808
+    m_Localized: Special Spoon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75408678873587712
+    m_Localized: Rock Candy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75408883819864064
+    m_Localized: Rock Candy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75421017828089856
+    m_Localized: Pepper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75422762805354496
+    m_Localized: Spicy Sauce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75423041743347712
+    m_Localized: Spicy Sauce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75439325759528960
+    m_Localized: Cake with rock candy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75439803159404544
+    m_Localized: Sweet Dough
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75440053718736896
+    m_Localized: Sweet Dough
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75440341460574208
+    m_Localized: Golden Egg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78317296254050304
+    m_Localized: Salty cake with pepper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78317786027122688
+    m_Localized: Cake With Rock Candy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81851391684763648
+    m_Localized: Phoenix Chick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81858438455222272
+    m_Localized: Salty dough
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81858725928624128
+    m_Localized: Salty Dough
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82770789362688000
+    m_Localized: Onion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85964404536762368
+    m_Localized: Savory Cake with pepper
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00e06ffe2fc4880000e0ef90f3c4880000e06f6acccc8800

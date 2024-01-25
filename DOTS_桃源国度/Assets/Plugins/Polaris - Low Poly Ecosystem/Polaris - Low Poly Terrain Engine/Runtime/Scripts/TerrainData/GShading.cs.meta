@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 2a1a3589e24589e4fb6840b44d1b21c5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - terrainData: {instanceID: 0}
+  - customMaterial: {instanceID: 0}
+  - albedoMap: {instanceID: 0}
+  - metallicMap: {instanceID: 0}
+  - colorByHeightMap: {instanceID: 0}
+  - colorByNormalMap: {instanceID: 0}
+  - colorBlendMap: {instanceID: 0}
+  - splats: {fileID: 11400000, guid: a3cfde07cd0a9f4488f10294d27e360e, type: 2}
+  - msTextureArrayConfig: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

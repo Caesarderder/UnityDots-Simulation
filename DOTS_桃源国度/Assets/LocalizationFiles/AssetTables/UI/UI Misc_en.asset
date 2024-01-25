@@ -1,0 +1,281 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Misc_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 457af5455987a4876acc4332c3a761e5, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 17967341568
+    m_Localized: Quit?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58689839104
+    m_Localized: Are you sure you want to quit?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 261593489408
+    m_Localized: New Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 932216561664
+    m_Localized: 'Do you want to start a new game or continue the previous one?
+
+      If
+      you start a new game all previous progress will be erased.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1329823997952
+    m_Localized: New game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1357317660672
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1422086103040
+    m_Localized: Ok
+    m_Metadata:
+      m_Items: []
+  - m_Id: 325682444886016
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 325716511023104
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 342818437455872
+    m_Localized: 'Hold on ! '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 344204675899392
+    m_Localized: 'Take your time. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 359750184198144
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 360002618384384
+    m_Localized: Back to Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1402275795820544
+    m_Localized: Already?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1402374143860736
+    m_Localized: 'Are you sure you want to go back to the main menu? '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1402618692755456
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1402740012998656
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25694370619318272
+    m_Localized: Sound FX
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25694405000028160
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26376705492770816
+    m_Localized: Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26376909243670528
+    m_Localized: Reset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26441837975560192
+    m_Localized: Resolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26441860440252416
+    m_Localized: Anti Aliasing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26442178498519040
+    m_Localized: Shadow quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26442199704920064
+    m_Localized: Shadow Distance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26442250661519360
+    m_Localized: Fullscreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26700844552282112
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27842720449814528
+    m_Localized: On
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27842773037998080
+    m_Localized: Off
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27843016517345280
+    m_Localized: 'Hard Shadows '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27842986792312832
+    m_Localized: Disable Shadows
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27842872535277568
+    m_Localized: Soft Shadows
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28215004561793024
+    m_Localized: Off
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28215115006205952
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28215167229485056
+    m_Localized: Optimal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28215225706471424
+    m_Localized: Far
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28524676346929152
+    m_Localized: Master Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28949273596780544
+    m_Localized: CONTINUE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28949308321423360
+    m_Localized: NEW GAME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28949337803186176
+    m_Localized: SETTINGS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28949362876735488
+    m_Localized: CREDITS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28949384108302336
+    m_Localized: EXIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29235244947070976
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9515819008
+    m_Localized: Customization
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14511235072
+    m_Localized: Cooking Items
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19204661248
+    m_Localized: Recipes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8664375296
+    m_Localized: Eat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63681060864
+    m_Localized: Ingredients
+    m_Metadata:
+      m_Items: []
+  - m_Id: 111147999232
+    m_Localized: Utensil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9104777216
+    m_Localized: Use
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40314593280
+    m_Localized: Equip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5159170121654272
+    m_Localized: Cook
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7281953546072064
+    m_Localized: Eat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4343019200307200
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4343061285953536
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4343120337559552
+    m_Localized: Graphics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4365754475470848
+    m_Localized: SFX Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4365955084836864
+    m_Localized: Resolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4366250359644160
+    m_Localized: Fullscreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4366384514457600
+    m_Localized: Graphic quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4366556778717184
+    m_Localized: Anti Aliasing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4366706561507328
+    m_Localized: Shadow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4389053741916160
+    m_Localized: Music Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35779435768438784
+    m_Localized: '*You need to be near a pot to cook'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

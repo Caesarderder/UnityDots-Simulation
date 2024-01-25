@@ -1,0 +1,433 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0adee3aa5bcf4ad459deda003f7c26af, type: 3}
+  m_Name: PolarisRuntimeSettings
+  m_EditorClassIdentifier: 
+  geometryDefault:
+    width: 1000
+    height: 500
+    length: 1000
+    heightMapResolution: 512
+    meshBaseResolution: 6
+    meshResolution: 10
+    chunkGridSize: 5
+    lodCount: 1
+    displacementSeed: 12345
+    displacementStrength: 0
+    albedoToVertexColorMode: 0
+    storageMode: 0
+    allowTimeSlicedGeneration: 0
+    smoothNormal: 0
+    useSmoothNormalMask: 0
+    mergeUv: 0
+  shadingDefault:
+    albedoMapResolution: 512
+    metallicMapResolution: 512
+    albedoMapPropertyName: _MainTex
+    metallicMapPropertyName: _MetallicGlossMap
+    colorByHeight:
+      serializedVersion: 2
+      key0: {r: 0.972549, g: 0.8011581, b: 0.56407845, a: 1}
+      key1: {r: 0.40775937, g: 0.5754717, b: 0.16015486, a: 1}
+      key2: {r: 0.40775937, g: 0.5754717, b: 0.16015488, a: 0}
+      key3: {r: 0.8867924, g: 0.8867924, b: 0.8867924, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 23708
+      ctime1: 40092
+      ctime2: 44718
+      ctime3: 60716
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_ColorSpace: -1
+      m_NumColorKeys: 4
+      m_NumAlphaKeys: 2
+    colorByNormal:
+      serializedVersion: 2
+      key0: {r: 0.41509432, g: 0.38840762, b: 0.3700605, a: 1}
+      key1: {r: 0.5489022, g: 0.6886792, b: 0.373576, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 48380
+      ctime1: 60331
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_ColorSpace: -1
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    colorBlendCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.2230339
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.5027466
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.79710406
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.9433594
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorByHeightPropertyName: _ColorByHeight
+    colorByNormalPropertyName: _ColorByNormal
+    colorBlendPropertyName: _ColorBlend
+    dimensionPropertyName: _Dimension
+    splatControlResolution: 512
+    splatControlMapPropertyName: _Control
+    splatMapPropertyName: _Splat
+    splatNormalPropertyName: _Normal
+    splatMetallicPropertyName: _Metallic
+    splatSmoothnessPropertyName: _Smoothness
+  renderingDefault:
+    terrainCastShadow: 1
+    terrainReceiveShadow: 1
+    drawTrees: 1
+    enableInstancing: 1
+    billboardStart: 100
+    treeDistance: 200
+    treeCullBias: 56.3
+    drawGrasses: 1
+    grassDistance: 100
+    grassCellToProcessPerFrame: 1
+    grassFadeStart: 0.75
+    grassCullBias: 17.5
+  foliageDefault:
+    treeSnapMode: 0
+    treeSnapLayerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    grassSnapMode: 0
+    grassSnapLayerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    patchGridSize: 16
+    enableInteractiveGrass: 0
+    vectorFieldMapResolution: 512
+    bendSensitive: 1
+    restoreSensitive: 0.03
+  maskDefault:
+    maskMapResolution: 256
+  geometryGeneration:
+    triangulateIteration: 10
+    lodTransition:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0.004725512
+        outSlope: 0.004725512
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.49908593
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: -2.0110295
+        outSlope: -2.0110295
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.49725777
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  terrainRendering:
+    builtinRpMaterials:
+    - lightingModel: 0
+      texturingModel: 2
+      splatsModel: 0
+      material: {fileID: 2100000, guid: 1f52eb6ce10e55a4099ae55cc01b119e, type: 2}
+    - lightingModel: 0
+      texturingModel: 2
+      splatsModel: 1
+      material: {fileID: 2100000, guid: 8b56f8565d18b5a488774ab6a9517931, type: 2}
+    - lightingModel: 0
+      texturingModel: 2
+      splatsModel: 2
+      material: {fileID: 2100000, guid: 09444822d81fc16418d0e347310de385, type: 2}
+    - lightingModel: 0
+      texturingModel: 0
+      splatsModel: 0
+      material: {fileID: 2100000, guid: 7d883601ac0b74542afa362c7a216952, type: 2}
+    - lightingModel: 0
+      texturingModel: 3
+      splatsModel: 0
+      material: {fileID: 2100000, guid: 2407d82437383444486716681d0389f7, type: 2}
+    - lightingModel: 0
+      texturingModel: 1
+      splatsModel: 0
+      material: {fileID: 2100000, guid: 41f51d3f1db9c564f80f180db87e3c42, type: 2}
+    - lightingModel: 1
+      texturingModel: 2
+      splatsModel: 0
+      material: {fileID: 2100000, guid: 2677bce7416957440ba400abba71f6a9, type: 2}
+    - lightingModel: 1
+      texturingModel: 2
+      splatsModel: 1
+      material: {fileID: 2100000, guid: a76fdd1ddd41bf94ab44298fbf40b65c, type: 2}
+    - lightingModel: 1
+      texturingModel: 2
+      splatsModel: 2
+      material: {fileID: 2100000, guid: a1514d39b149d4242bd583297dcf31bb, type: 2}
+    - lightingModel: 1
+      texturingModel: 0
+      splatsModel: 0
+      material: {fileID: 2100000, guid: 6ca99d08d9071df45966feafc8952237, type: 2}
+    - lightingModel: 1
+      texturingModel: 3
+      splatsModel: 0
+      material: {fileID: 2100000, guid: 894f9cdf0f8a4514da47a36df86a4352, type: 2}
+    - lightingModel: 1
+      texturingModel: 1
+      splatsModel: 0
+      material: {fileID: 2100000, guid: faae3a3906a420d4091b5786d1a6c15a, type: 2}
+    - lightingModel: 2
+      texturingModel: 2
+      splatsModel: 0
+      material: {fileID: 2100000, guid: f16db84b20aeb4b4e9ffb2429f24b831, type: 2}
+    - lightingModel: 2
+      texturingModel: 2
+      splatsModel: 1
+      material: {fileID: 2100000, guid: cefbb481666e7c44f8e159a9408e7115, type: 2}
+    - lightingModel: 2
+      texturingModel: 2
+      splatsModel: 2
+      material: {fileID: 2100000, guid: 628b460985e13114c94a285d272cd9e0, type: 2}
+    - lightingModel: 2
+      texturingModel: 0
+      splatsModel: 0
+      material: {fileID: 2100000, guid: a1cb8d0a827b8f94ca1bb7125360c068, type: 2}
+    - lightingModel: 2
+      texturingModel: 3
+      splatsModel: 0
+      material: {fileID: 2100000, guid: 34801d19551671a4abe7c4eb5d611da5, type: 2}
+    - lightingModel: 2
+      texturingModel: 1
+      splatsModel: 0
+      material: {fileID: 2100000, guid: 4dee0dc4ef62127448c318be6eeae99b, type: 2}
+    universalRpMaterials:
+    - lightingModel: 0
+      texturingModel: 2
+      splatsModel: 0
+      material: {fileID: 2100000, guid: 1167b3d6c53efa2409e603a627f37582, type: 2}
+    - lightingModel: 0
+      texturingModel: 2
+      splatsModel: 1
+      material: {fileID: 2100000, guid: 888f8cae24b8f154e876d105bbfcd1b6, type: 2}
+    - lightingModel: 0
+      texturingModel: 2
+      splatsModel: 2
+      material: {fileID: 2100000, guid: 9b5267449484f084aa704b13650a3f2a, type: 2}
+    - lightingModel: 0
+      texturingModel: 0
+      splatsModel: 0
+      material: {fileID: 2100000, guid: cde975e8e82988f4baf8e4b40ec841e4, type: 2}
+    - lightingModel: 0
+      texturingModel: 3
+      splatsModel: 0
+      material: {fileID: 2100000, guid: 50e9e558358acd741be588d31e086cf1, type: 2}
+    - lightingModel: 0
+      texturingModel: 1
+      splatsModel: 0
+      material: {fileID: 2100000, guid: 00e90be422fd26a4c83648097e9e089e, type: 2}
+  foliageRendering:
+    grassQuad: {fileID: -3781860745874542921, guid: 43b3ffc4724f06d4c882432dff623b1a,
+      type: 3}
+    grassCross: {fileID: 2061150301263699924, guid: 43b3ffc4724f06d4c882432dff623b1a,
+      type: 3}
+    grassTriCross: {fileID: 5907551776619255687, guid: 43b3ffc4724f06d4c882432dff623b1a,
+      type: 3}
+    grassClump: {fileID: -2799624486674179001, guid: 43b3ffc4724f06d4c882432dff623b1a,
+      type: 3}
+    treeBillboardMaterial: {fileID: 2100000, guid: a92985462b1b78c4abcb29c9e3d8140f,
+      type: 2}
+    grassMaterial: {fileID: 2100000, guid: aa612f1669a06004ca4c7e53adf49314, type: 2}
+    grassBillboardMaterial: {fileID: 2100000, guid: 2902218ab3a8cae43aee73ba8891cdd7,
+      type: 2}
+    grassInteractiveMaterial: {fileID: 2100000, guid: 2e0b5cbdcfe3d5c408d57601daaa6c3e,
+      type: 2}
+    urpTreeBillboardMaterial: {fileID: 2100000, guid: 6561137a53660d84abb4f42bc4980546,
+      type: 2}
+    urpGrassMaterial: {fileID: 2100000, guid: eb9bca032b150d44fb2c1f89a56550cb, type: 2}
+    urpGrassBillboardMaterial: {fileID: 2100000, guid: 8bb3fa855f9277648a4db6e8aeb7f231,
+      type: 2}
+    urpGrassInteractiveMaterial: {fileID: 2100000, guid: 8e70cccdb959f9640a1e0fe48ccabae4,
+      type: 2}
+    windNoiseTexture: {fileID: 2800000, guid: 506efc34a9983ac4880684638edb4f9c, type: 3}
+  internalShaders:
+    solidColorShader: {fileID: 4800000, guid: f43a9b9297d62004b93c376cb5c4142d, type: 3}
+    copyTextureShader: {fileID: 4800000, guid: b2a2d1e4622cc434a80be00aaf67a410, type: 3}
+    subDivisionMapShader: {fileID: 4800000, guid: beba93718ae7a584dbe38f3c62242fa0,
+      type: 3}
+    blurShader: {fileID: 4800000, guid: 5142b91b468fd574887baf940820937b, type: 3}
+    blurRadiusShader: {fileID: 4800000, guid: 0c1e2a391d6742643afac00313644bef, type: 3}
+    elevationPainterShader: {fileID: 4800000, guid: d2b7cc01d731c5f4d9fef8e254961a86,
+      type: 3}
+    heightSamplingPainterShader: {fileID: 4800000, guid: a6fe63bcb3ebfa242ac2857576c1c255,
+      type: 3}
+    subdivPainterShader: {fileID: 4800000, guid: 95105e71ad3a5194fa0936f98018b039,
+      type: 3}
+    painterCursorProjectorShader: {fileID: 4800000, guid: 26c129688ca61b84eb58b46bd861463e,
+      type: 3}
+    albedoPainterShader: {fileID: 4800000, guid: 67e4f61b1f2043440b1bc9096f522f6f,
+      type: 3}
+    metallicPainterShader: {fileID: 4800000, guid: 9c0a44a1319a4a44ea982887b6bd405f,
+      type: 3}
+    smoothnessPainterShader: {fileID: 4800000, guid: 96ca7cdfb2d239c42b0ded3f55ceb9a2,
+      type: 3}
+    splatPainterShader: {fileID: 4800000, guid: b1ceb6aff32e18f4a90def712bc79ec3,
+      type: 3}
+    visibilityPainterShader: {fileID: 4800000, guid: bc802734a25883d40bb771a5efed5515,
+      type: 3}
+    rampMakerShader: {fileID: 4800000, guid: 9ed3d1e012a343049bb9873d4500715e, type: 3}
+    pathPainterAlbedoShader: {fileID: 4800000, guid: 0ec1444c50490d84f8183a42b0e01b6b,
+      type: 3}
+    pathPainterMetallicSmoothnessShader: {fileID: 4800000, guid: 24c71d8ee3a7ef347b14cfd8803e9b32,
+      type: 3}
+    pathPainterSplatShader: {fileID: 4800000, guid: 22149d56e584c274ab9bcf4d08b35989,
+      type: 3}
+    geometryLivePreviewShader: {fileID: 4800000, guid: 510e4861dd4d58b439041c2dc9884655,
+      type: 3}
+    geometricalHeightMapShader: {fileID: 4800000, guid: 5cc6b678a61370841bf67fcea5716a32,
+      type: 3}
+    splineMaskShader: {fileID: 4800000, guid: 46334cd71331fac4e82d781b8c437a32, type: 3}
+    maskVisualizerShader: {fileID: 4800000, guid: 6e250bf4f1e976346a9e75982a87c627,
+      type: 3}
+    stamperShader: {fileID: 4800000, guid: 4d006bcf88e71a5479427d62fc46fa81, type: 3}
+    terrainNormalMapShader: {fileID: 4800000, guid: 9eee876c722e2ce4eb45fa1a7513823c,
+      type: 3}
+    terrainPerPixelNormalMapShader: {fileID: 4800000, guid: c65f668836cc78948856ef6163bd3200,
+      type: 3}
+    textureStamperBrushShader: {fileID: 4800000, guid: 185edced7addf6d4f8ec3af89c43fcdc,
+      type: 3}
+    grassPreviewShader: {fileID: 4800000, guid: f56005929a57e564e970825f34eeb293,
+      type: 3}
+    navHelperDummyGameObjectShader: {fileID: 4800000, guid: 6e250bf4f1e976346a9e75982a87c627,
+      type: 3}
+    splatsToAlbedoShader: {fileID: 4800000, guid: be92d4bdeb4da30499d3104d16b44698,
+      type: 3}
+    unlitChannelMaskShader: {fileID: 4800000, guid: e859a5c7e4745464fb9e066858553a14,
+      type: 3}
+    channelToGrayscaleShader: {fileID: 4800000, guid: 245c829102baf0a4ea58ef54aeca4ffb,
+      type: 3}
+    heightMapFromMeshShader: {fileID: 4800000, guid: 89971da180e2dc24a86aabda7744927a,
+      type: 3}
+    curveFilterShader: {fileID: 4800000, guid: 9811b6f3401a9f9498905bac674be222, type: 3}
+    invertFilterShader: {fileID: 4800000, guid: f57cea8f388cb3b46a3eca6968ec4e86,
+      type: 3}
+    stepFilterShader: {fileID: 4800000, guid: 2fe773cf254c1d440ae25d8ad095c531, type: 3}
+    warpFilterShader: {fileID: 4800000, guid: 55e3b9f8c72cbd64db351c2feea7d831, type: 3}
+    steepnessMapGeneratorShader: {fileID: 4800000, guid: 18df09e1df3ca354981467b59a5cda99,
+      type: 3}
+    noiseMapGeneratorShader: {fileID: 4800000, guid: 18302b16fb4ab9f4ba39f3dc561cfbd5,
+      type: 3}
+    blendMapGeneratorShader: {fileID: 4800000, guid: 8cae2fd60d562ad478354575c2b24353,
+      type: 3}
+    distributionMapGeneratorShader: {fileID: 4800000, guid: b886b3f1e292d3940a46b39c2e878c08,
+      type: 3}
+    interactiveGrassVectorFieldShader: {fileID: 4800000, guid: f3327f2b8e6c47f49886d2da7a255df9,
+      type: 3}
+    subdivLivePreviewShader: {fileID: 4800000, guid: 3b635d2e20872444d833ca0b13f1553d,
+      type: 3}
+    visibilityLivePreviewShader: {fileID: 4800000, guid: 3acf902fab9fe3b46babb118f8f783dc,
+      type: 3}
+    terracePainterShader: {fileID: 4800000, guid: 8bab0ade5df71d24899040dceff4da6b,
+      type: 3}
+    remapPainterShader: {fileID: 4800000, guid: 68da3dd3b9f265544b7077c9ef316d3f,
+      type: 3}
+    noisePainterShader: {fileID: 4800000, guid: c0e3ee36e0239ba428ca3b3b6ff612f7,
+      type: 3}
+    heightmapConverterEncodeRGShader: {fileID: 4800000, guid: 6f910b94f493fea44b89ecf452da8596,
+      type: 3}
+    heightmapDecodeGrayscaleShader: {fileID: 4800000, guid: 7947323e6c5b8384cb27d29644fa4f1e,
+      type: 3}
+    drawTex2DArraySliceShader: {fileID: 4800000, guid: 6be8cd4531afb7344a29905068331f1e,
+      type: 3}
+    maskPainterShader: {fileID: 4800000, guid: e0e8cfc8c3f9c9f44bbb06394d46e1c9, type: 3}
+    mask4ChannelsShader: {fileID: 4800000, guid: 0b7cf658c0ffaaa44921201351dbe959,
+      type: 3}
+    fetchWorldDataShader: {fileID: 4800000, guid: ef2ff3af9311c504890e0bc3ae3093e3,
+      type: 3}
+    applyErosionShader: {fileID: 4800000, guid: 8bafd227d616cc04abb8f0025e5b8ddd,
+      type: 3}
+    erosionTexturerShader: {fileID: 4800000, guid: 904982dc4861dd14cb8e7d3cb30334dc,
+      type: 3}
+    hydraulicErosionShader: {fileID: 7200000, guid: 5a8f6fd8bb447824185ed7786e38a535,
+      type: 3}
+    thermalErosionShader: {fileID: 7200000, guid: 26b74d9d4e2359445b3f198ab5431a8b,
+      type: 3}
+  defaultTextures:
+    redTexture: {fileID: 2800000, guid: be6c4d41444b35148b68cd4432974843, type: 3}
+    blackTexture: {fileID: 2800000, guid: 47a91f8808e6f334a84f127655c54663, type: 3}
+  isEditingGeometry: 0
+  isEditingFoliage: 0

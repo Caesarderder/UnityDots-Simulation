@@ -1,0 +1,124 @@
+; FBX 6.1.0 project file
+; Low Poly Terrain Pack
+; http://pinwheel.studio
+; ----------
+FBXHeaderExtension:  {
+	FBXHeaderVersion: 1003
+	FBXVersion: 6100
+	Creator: "Pinwheel Studio"
+	CreationTimeStamp:  {
+		Version: 1000
+		Year: 2019
+		Month: 3
+		Day: 11
+		Hour: 8
+		Minute: 7
+		Second: 9
+		Millisecond: 683
+	}
+	OtherFlags:  {
+		FlagPLE: 0
+	}
+}
+; Object definition
+; ----------
+Definitions:  {
+	Version: 100
+	Count: 3
+	ObjectType: "Model" {
+		Count: 1
+	}
+	ObjectType: "Geometry" {
+		Count: 1
+	}
+	ObjectType: "Material" {
+		Count: 1
+	}
+	ObjectType: "Texture" {
+		Count: 1
+	}
+	ObjectType: "GlobalSettings" {
+		Count: 1
+	}
+}
+; Objects information
+; ----------
+Objects:  {
+	Model: "Model::Grid1", "Mesh" {
+		Version: 232
+		MultiLayer: 0
+		Shading: Y
+		Culling: "Culling Off"
+		Vertices: -0.5,0,0.5 ,0,0,1 ,-1,0,1 ,-0.5,0,0.5 ,0,0,0 ,0,0,1 ,-0.5,0,0.5 ,-1,0,0 ,0,0,0 ,-0.5,0,0.5 ,-1,0,1 ,-1,0,0
+		PolygonVertexIndex: 2,1,-1,5,4,-4,8,7,-7,11,10,-10
+		GeometryVersion: 124
+		LayerElementNormal: 0 {
+			Version: 101
+			Name: ""
+			MappingInformationType: "ByVertice"
+			ReferenceInformationType: "Direct"
+			Normals: 0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0
+		}
+		LayerElementUV: 0 {
+			Version: 101
+			Name: "UVMap"
+			MappingInformationType: "ByVertice"
+			ReferenceInformationType: "Direct"
+			UV: 0.5,0.5,0,1,1,1,0.5,0.5,0,0,0,1,0.5,0.5,1,0,0,0,0.5,0.5,1,1,1,0
+		}
+		LayerElementColor: 0 {
+			Version: 101
+			Name: "Color"
+			MappingInformationType: "ByVertice"
+			ReferenceInformationType: "Direct"
+			Colors:
+		}
+		LayerElementMaterial: 0 {
+			Version: 101
+			Name: ""
+			MappingInformationType: "AllSame"
+			ReferenceInformationType: "IndexToDirect"
+			Materials: 0
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement:  {
+				Type: "LayerElementNormal"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementUV"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementColor"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementMaterial"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementTexture"
+				TypedIndex: 0
+			}
+		}
+	}
+	Material: "Material::Grid1", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties60:  {
+			Property: "Diffuse", "ColorRGB", "", 1, 1, 1
+			Property: "Opacity", "double", "", 1
+			Property: "DiffuseColor", "ColorRGB", "", 1, 1, 1
+		}
+	}
+}
+; Object connections
+; ----------
+Connections:  {
+	Connect: "OO", "Model::Grid1", "Model::Scene"
+	Connect: "OO", "Material::Grid1", "Model::Grid1"
+	Connect: "OP", "Texture::Grid1_MainTex", "Material::Grid1", "DiffuseColor"
+}

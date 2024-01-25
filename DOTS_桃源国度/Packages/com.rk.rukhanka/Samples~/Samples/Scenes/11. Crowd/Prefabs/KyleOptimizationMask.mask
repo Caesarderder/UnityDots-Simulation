@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: KyleOptimizationMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Robot2
+    m_Weight: 1
+  - m_Path: Root
+    m_Weight: 1
+  - m_Path: Root/Hip
+    m_Weight: 0
+  - m_Path: Root/Hip/Left_Thigh_Joint_01
+    m_Weight: 0
+  - m_Path: Root/Hip/Left_Thigh_Joint_01/Left_Knee_Joint_01
+    m_Weight: 0
+  - m_Path: Root/Hip/Left_Thigh_Joint_01/Left_Knee_Joint_01/Left_Ankle_Joint_01
+    m_Weight: 0
+  - m_Path: Root/Hip/Left_Thigh_Joint_01/Left_Knee_Joint_01/Left_Ankle_Joint_01/Left_Toe_Joint_01
+    m_Weight: 0
+  - m_Path: Root/Hip/Right_Thigh_Joint_01
+    m_Weight: 0
+  - m_Path: Root/Hip/Right_Thigh_Joint_01/Right_Knee_Joint_01
+    m_Weight: 0
+  - m_Path: Root/Hip/Right_Thigh_Joint_01/Right_Knee_Joint_01/Right_Ankle_Joint_01
+    m_Weight: 0
+  - m_Path: Root/Hip/Right_Thigh_Joint_01/Right_Knee_Joint_01/Right_Ankle_Joint_01/Right_Toe_Joint_01
+    m_Weight: 0
+  - m_Path: Root/Ribs
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Index_Finger_Joint_01a
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Index_Finger_Joint_01a/Left_Index_Finger_Joint_01b
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Index_Finger_Joint_01a/Left_Index_Finger_Joint_01b/Left_Index_Finger_Joint_01c
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Middle_Finger_Joint_01a
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Middle_Finger_Joint_01a/Left_Middle_Finger_Joint_01b
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Middle_Finger_Joint_01a/Left_Middle_Finger_Joint_01b/Left_Middle_Finger_Joint_01c
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Pinky_Finger_Joint_01a
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Pinky_Finger_Joint_01a/Left_Pinky_Finger_Joint_01b
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Pinky_Finger_Joint_01a/Left_Pinky_Finger_Joint_01b/Left_Pinky_Finger_Joint_01c
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Ring_Finger_Joint_01a
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Ring_Finger_Joint_01a/Left_Ring_Finger_Joint_01b
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Ring_Finger_Joint_01a/Left_Ring_Finger_Joint_01b/Left_Ring_Finger_Joint_01c
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Thumb_Joint_01a
+    m_Weight: 0
+  - m_Path: Root/Ribs/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Thumb_Joint_01a/Left_Thumb_Joint_01b
+    m_Weight: 0
+  - m_Path: Root/Ribs/Neck
+    m_Weight: 0
+  - m_Path: Root/Ribs/Neck/Head
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Index_Finger_Joint_01a
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Index_Finger_Joint_01a/Right_Index_Finger_Joint_01b
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Index_Finger_Joint_01a/Right_Index_Finger_Joint_01b/Right_Index_Finger_Joint_01c
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Middle_Finger_Joint_01a
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Middle_Finger_Joint_01a/Right_Middle_Finger_Joint_01b
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Middle_Finger_Joint_01a/Right_Middle_Finger_Joint_01b/Right_Middle_Finger_Joint_01c
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Pinky_Finger_Joint_01a
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Pinky_Finger_Joint_01a/Right_Pinky_Finger_Joint_01b
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Pinky_Finger_Joint_01a/Right_Pinky_Finger_Joint_01b/Right_Pinky_Finger_Joint_01c
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Ring_Finger_Joint_01a
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Ring_Finger_Joint_01a/Right_Ring_Finger_Joint_01b
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Ring_Finger_Joint_01a/Right_Ring_Finger_Joint_01b/Right_Ring_Finger_Joint_01c
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Thumb_Joint_01a
+    m_Weight: 0
+  - m_Path: Root/Ribs/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Thumb_Joint_01a/Right_Thumb_Joint_01b
+    m_Weight: 0

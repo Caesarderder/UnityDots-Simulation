@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: 93e008a3a312f6041bb52f2c0413bc68
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: capsule_shape_24_16
+    100002: cone_shape_32
+    100004: cone_uncapped_shape_32
+    100006: cube_shape
+    100008: cylinder_shape_24
+    100010: //RootNode
+    100012: sphere_shape_24_16
+    100014: torus_shape_32_24
+    400000: capsule_shape_24_16
+    400002: cone_shape_32
+    400004: cone_uncapped_shape_32
+    400006: cube_shape
+    400008: cylinder_shape_24
+    400010: //RootNode
+    400012: sphere_shape_24_16
+    400014: torus_shape_32_24
+    2100000: No Name
+    2300000: capsule_shape_24_16
+    2300002: cone_shape_32
+    2300004: cone_uncapped_shape_32
+    2300006: cube_shape
+    2300008: cylinder_shape_24
+    2300010: sphere_shape_24_16
+    2300012: torus_shape_32_24
+    3300000: capsule_shape_24_16
+    3300002: cone_shape_32
+    3300004: cone_uncapped_shape_32
+    3300006: cube_shape
+    3300008: cylinder_shape_24
+    3300010: sphere_shape_24_16
+    3300012: torus_shape_32_24
+    4300000: capsule_shape_24_16
+    4300002: sphere_shape_24_16
+    4300004: torus_shape_32_24
+    4300006: cylinder_shape_24
+    4300008: cube_shape
+    4300010: cone_shape_32
+    4300012: cone_uncapped_shape_32
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 0
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 0
+    normalSmoothingSource: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

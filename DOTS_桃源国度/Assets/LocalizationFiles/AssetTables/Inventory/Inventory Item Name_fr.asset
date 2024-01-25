@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Inventory Item Name_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 41b74adf4121a468e9dbe8958eb2f813, type: 2}
+  m_Metadata:
+    m_Items:
+    - id: 0
+  m_TableData:
+  - m_Id: 24397351017934848
+    m_Localized: Couteau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38495894931234816
+    m_Localized: Marteau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38496307243900928
+    m_Localized: Citron
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 38497147220385792
+    m_Localized: Homard
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 38507295636709376
+    m_Localized: Gingembre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38508915711795200
+    m_Localized: Citronnade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40633530915479552
+    m_Localized: Pizza hawaienne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58726583291076608
+    m_Localized: "Oeuf d'une cr\xE9ature visqueuse"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58726583295270912
+    m_Localized: Soup de homard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58726583295270913
+    m_Localized: Soupe de homard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68473605157519360
+    m_Localized: "Oeuf de cr\xE9ature de roche"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00e0ef90f3c4880000e06ffe2fc4880000e06f6acccc8800

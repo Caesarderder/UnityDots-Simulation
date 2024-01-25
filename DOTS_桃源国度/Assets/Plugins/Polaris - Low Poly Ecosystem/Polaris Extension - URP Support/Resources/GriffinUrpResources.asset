@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc2a1cc0d83caa64eb8a04447b0eff01, type: 3}
+  m_Name: GriffinUrpResources
+  m_EditorClassIdentifier: 
+  terrain4SplatsMaterial: {fileID: 2100000, guid: 1167b3d6c53efa2409e603a627f37582,
+    type: 2}
+  terrain4Splats4NormalsMaterial: {fileID: 2100000, guid: 888f8cae24b8f154e876d105bbfcd1b6,
+    type: 2}
+  terrain8SplatsMaterial: {fileID: 2100000, guid: 9b5267449484f084aa704b13650a3f2a,
+    type: 2}
+  terrainGradientLookupMaterial: {fileID: 2100000, guid: cde975e8e82988f4baf8e4b40ec841e4,
+    type: 2}
+  terrainVertexColorMaterial: {fileID: 2100000, guid: 50e9e558358acd741be588d31e086cf1,
+    type: 2}
+  terrainColorMapMaterial: {fileID: 2100000, guid: 00e90be422fd26a4c83648097e9e089e,
+    type: 2}
+  grassMaterial: {fileID: 2100000, guid: eb9bca032b150d44fb2c1f89a56550cb, type: 2}
+  grassBillboardMaterial: {fileID: 2100000, guid: 8bb3fa855f9277648a4db6e8aeb7f231,
+    type: 2}
+  grassInteractiveMaterial: {fileID: 2100000, guid: 8e70cccdb959f9640a1e0fe48ccabae4,
+    type: 2}
+  treeBillboardMaterial: {fileID: 2100000, guid: 6561137a53660d84abb4f42bc4980546,
+    type: 2}

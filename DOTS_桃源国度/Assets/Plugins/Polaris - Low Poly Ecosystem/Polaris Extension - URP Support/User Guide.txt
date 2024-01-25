@@ -1,0 +1,4 @@
+Welcome to Polaris V2 - URP Module.
+To install URP shader to use with Polaris V2, go to Window>Griffin>Tools>Extension to open the extension window.
+In the Extension window, select Polaris V2 - Universal RP Support and click on install.
+Done, now you can use the Terrain Wizard to re-configure your terrain material.

@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fc8b6d8b91f6c428f33284689ae1ca, type: 3}
+  m_Name: ArchitectureData
+  m_EditorClassIdentifier: 
+  Size:
+    x: 51
+    y: 51
+  objectsData:
+  - <Name>k__BackingField: "-----\u5BAB\u6BBF-----"
+    <ID>k__BackingField: 0
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 1000
+    <Size>k__BackingField: {x: 0, y: 0}
+    <Prefab>k__BackingField: {fileID: 0}
+  - <Name>k__BackingField: "\u5BAB\u6BBF"
+    <ID>k__BackingField: 101
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 3000
+    <Size>k__BackingField: {x: 3, y: 2}
+    <Prefab>k__BackingField: {fileID: 718860750885938969, guid: 79a8b53ab09219c4094d175a33085ac1,
+      type: 3}
+  - <Name>k__BackingField: "-----\u4F4F\u5904-----"
+    <ID>k__BackingField: 0
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 1000
+    <Size>k__BackingField: {x: 0, y: 0}
+    <Prefab>k__BackingField: {fileID: 0}
+  - <Name>k__BackingField: "\u519C\u6C11\u5C45\u4F4F\u5904"
+    <ID>k__BackingField: 20101
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 3000
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 779424134957676287, guid: 35ff6b6f21e813a4dabce572c9b1584c,
+      type: 3}
+  - <Name>k__BackingField: "\u4F10\u6728\u5DE5\u5C45\u4F4F\u5904"
+    <ID>k__BackingField: 20201
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 3000
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 656085427412634763, guid: 4e20251cf9a249141a8f3970fed90aed,
+      type: 3}
+  - <Name>k__BackingField: "\u5EFA\u7B51\u5E08\u5C45\u4F4F\u5904"
+    <ID>k__BackingField: 20301
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 3000
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 1477553691614146871, guid: 34a2264feec30574d9768c16722f6340,
+      type: 3}
+  - <Name>k__BackingField: "\u6570\u5B66\u5BB6\u5C45\u4F4F\u5904"
+    <ID>k__BackingField: 20401
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 3000
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 2800268149284362295, guid: 77b70ad2732854f4da7156ccef220d8d,
+      type: 3}
+  - <Name>k__BackingField: "-----\u9053\u8DEF-----"
+    <ID>k__BackingField: 0
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 1000
+    <Size>k__BackingField: {x: 0, y: 0}
+    <Prefab>k__BackingField: {fileID: 0}
+  - <Name>k__BackingField: "\u571F\u8DEF"
+    <ID>k__BackingField: 301
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 50
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 526171494934407454, guid: c4ea6c556c8f2064a877d7f0982758f3,
+      type: 3}
+  - <Name>k__BackingField: "\u788E\u77F3\u8DEF"
+    <ID>k__BackingField: 302
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 40
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 3797170849887413394, guid: aa6bce23aca9f9343a6a97f7ce812a15,
+      type: 3}
+  - <Name>k__BackingField: "\u77F3\u7816\u8DEF"
+    <ID>k__BackingField: 303
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 30
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 4766014060078218968, guid: 6c1438b96b7fdda45bb8f3b0f53272e6,
+      type: 3}
+  - <Name>k__BackingField: "-----\u519C\u7530-----"
+    <ID>k__BackingField: 0
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 1000
+    <Size>k__BackingField: {x: 0, y: 0}
+    <Prefab>k__BackingField: {fileID: 0}
+  - <Name>k__BackingField: "\u5C0F\u9EA6"
+    <ID>k__BackingField: 401
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 200
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 1504820000296519979, guid: 2e4b654da4a8aad4cbf167ada816c4f5,
+      type: 3}
+  - <Name>k__BackingField: "\u7389\u7C73"
+    <ID>k__BackingField: 402
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 200
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 1504820000296519979, guid: 2e4b654da4a8aad4cbf167ada816c4f5,
+      type: 3}
+  - <Name>k__BackingField: "-----\u6811\u6728-----"
+    <ID>k__BackingField: 0
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 1000
+    <Size>k__BackingField: {x: 0, y: 0}
+    <Prefab>k__BackingField: {fileID: 0}
+  - <Name>k__BackingField: "\u6811\u67281"
+    <ID>k__BackingField: 501
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 200
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 9066887153543894291, guid: 761b06352a7479d4e99ad3d1d8799235,
+      type: 3}
+  - <Name>k__BackingField: "-----\u7814\u7A76\u6240-----"
+    <ID>k__BackingField: 0
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 1000
+    <Size>k__BackingField: {x: 0, y: 0}
+    <Prefab>k__BackingField: {fileID: 0}
+  - <Name>k__BackingField: "\u7FF0\u6797\u9662"
+    <ID>k__BackingField: 901
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 3000
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 6220808777105877989, guid: 9145a75e950ac7b459f18cc63cb847b9,
+      type: 3}
+  - <Name>k__BackingField: "-----\u5A31\u4E50-----"
+    <ID>k__BackingField: 0
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 1000
+    <Size>k__BackingField: {x: 0, y: 0}
+    <Prefab>k__BackingField: {fileID: 0}
+  - <Name>k__BackingField: "-----\u5546\u5E97-----"
+    <ID>k__BackingField: 0
+    <WoodCost>k__BackingField: 100
+    <MoveCost>k__BackingField: 1000
+    <Size>k__BackingField: {x: 0, y: 0}
+    <Prefab>k__BackingField: {fileID: 0}
